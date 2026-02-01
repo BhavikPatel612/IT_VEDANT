@@ -1,0 +1,142 @@
+# Question:
+# Write a Python program to demonstrate all basic arithmetic operations between two numbers.
+
+#Arithmetic operator
+a=6
+b=10
+print ("Subtraction    :",a-b)
+print ("Addition       :",a+b)
+print ("Multiplication :",a*b)
+print ("Division       :",a/b)
+print ("Modulus        :",a%b)
+print ("Exponention    :",a**b)
+print ("Floor division :",a//b)
+
+# Comment:
+# This program shows how Python performs arithmetic operations between two numbers.
+# - Subtraction (-) subtracts b from a
+# - Addition (+) adds a and b
+# - Multiplication (*) multiplies a and b
+# - Division (/) divides a by b and returns a float
+# - Modulus (%) gives the remainder of a divided by b
+# - Exponentiation (**) raises a to the power of b
+# - Floor division (//) divides a by b and returns the integer part only
+-----------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to demonstrate membership operators on a string.
+
+a="hello world"
+print ("h" in a)
+print  ("ww" in a)
+print  ("y" not in a)
+print ("ll" not in a)
+
+# Comment:
+# Membership operators check if a value exists in a sequence (like a string, list, etc.).
+# - 'in' returns True if the value is found
+# - 'not in' returns True if the value is not found
+# Here, we test several substrings in the string 'a'.
+-----------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to demonstrate comparison operators between two numbers.
+a=4
+b=6
+print (a>b)
+print (a<b)
+print (a==b)
+print (a!=b)
+print (a<=b)
+print (a<=b)
+
+# Comment:
+# Comparison operators compare two values and return a boolean (True or False).
+# - '>' Greater than
+# - '<' Less than
+# - '==' Equal to
+# - '!=' Not equal to
+# - '<=' Less than or equal to
+# - '>=' Greater than or equal to
+---------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to demonstrate logical operators (and, or, not) between two numbers.
+
+# Program:
+# Logical operator example
+
+a=5
+b=5
+print (a>=b and a==b)
+print (a>b or a==b)
+print (not(a>=b and a==b))
+
+
+# Comment:
+# Logical operators combine boolean expressions:
+# - 'and' returns True only if both conditions are True
+# - 'or' returns True if at least one condition is True
+# - 'not' negates the boolean value of the condition
+# Here, the program checks different combinations of comparisons between a and b.
+----------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to demonstrate assignment operations on a variable.
+
+#assignment operator
+x=6
+x=x+6
+x=x/5
+x=x-2
+x=x*12
+
+print(x)
+
+
+# Comment:
+# Assignment operators are used to update the value of a variable.
+# - Here, x is updated step by step using standard assignment (=) after performing arithmetic operations.
+# - Python also supports shorthand operators like x += 6, x /= 5, etc., which combine operation and assignment.
+-------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to demonstrate identity operators (is, is not) with strings and numbers.
+
+a="hello"
+b="words"
+f=12
+d=12
+print (a is b)
+print (a is not b)
+print (f is d)
+
+
+# Comment:
+# Identity operators compare whether two variables point to the same object in memory:
+# - 'is' returns True if both variables refer to the same object
+# - 'is not' returns True if they refer to different objects
+--------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to demonstrate bitwise operators (&, |, ^) between two numbers.
+
+a=10
+b=8
+print (a & b)  # Bitwise AND: 1 if both bits are 1
+print (a | b)   # Bitwise OR: 1 if at least one bit is 1
+print (a ^ b)  # Bitwise XOR: 1 if bits are different
+---------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to take user input for school details and display them.
+
+print ("school detais")
+schoolname = (input("enter your school name"))
+name = (input("enter your name :"))
+age = int(input("enter your age :"))
+weight = float(input("enter your weight:"))
+print (schoolname)
+print (name)
+print (age)
+print (weight)
+
+# Comment:
+# This program demonstrates how to take different types of input from the user:
+# - input() returns a string by default
+# - int() converts input to an integer
+# - float() converts input to a floating-point number
+# Then, it prints each input value to the console.

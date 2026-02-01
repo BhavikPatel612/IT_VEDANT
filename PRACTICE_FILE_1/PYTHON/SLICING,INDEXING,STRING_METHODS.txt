@@ -1,0 +1,178 @@
+INDEX AND SLISING AND STRING METHOD
+--------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to convert a string into uppercase letters using the upper() method.
+
+f= "my name is bhavik patel"  
+w = f.upper()  
+w       
+
+# Comment:
+# This program demonstrates the use of the upper() string method.
+# - The original string is stored in variable 'f'.
+# - The upper() method converts all characters to uppercase.
+# - The result is stored in variable 'w'.
+# - Strings are immutable, so the original string 'f' remains unchanged.
+-----------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to access the first character of a string using indexing.
+
+f[0]  #indexing
+# Comment:
+# This program demonstrates string indexing in Python.
+# - Strings are indexed starting from 0.
+# - f[0] returns the first character of the string.
+-------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to extract the first five characters of a string using slicing.
+
+f[0:5] # slicing
+
+ # Slicing from index 0 to 4
+---------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to access the complete string using slicing.
+
+f[:]    
+
+ # Accessing the entire string
+----------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to extract characters from a string using slicing with a step value.
+
+f[::3]  # [start,end,step]
+# Slicing with step value 3
+-----------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to remove the last two characters of a string using slicing.
+
+f[:-2] 
+# Slicing to exclude the last two characters
+---------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to extract a substring using both positive and negative indices.
+
+f[4:-3]
+# Slicing from index 4 to third last character
+-------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to find the position of a substring in a string using the find() method.
+
+f.find("bha")  
+# Finding the starting index of substring "bha"
+-------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to replace a word in a string using the replace() method.
+
+f.replace("bhavik","BHAVIK") 
+# # Replacing 'bhavik' with 'BHAVIK'
+-------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to take a name as input from the user and display it.
+
+name=(input("enter your name here :"))
+name
+# Comment:
+# This program demonstrates taking string input from the user.
+# - input() function is used to take input from the keyboard.
+# - The input is stored in the variable 'name' as a string.
+# - print() is used to display the entered value.
+# Displaying the entered name
+-----------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to find the length of a string using the len() function.
+
+len(name)
+
+# Comment:
+# This program demonstrates the use of the len() function:
+# - len() returns the total number of characters in a string (including spaces if present).
+# - strip() ensures there are no leading or trailing spaces.
+# - The result is an integer representing the length of the string.
+-----------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to take a name as input and remove extra spaces using the strip() method
+
+name=(input("enter your name here :")).strip()
+name
+
+# Comment:
+# This program demonstrates the use of the strip() method:
+# - input() takes the name from the user.
+# - strip() removes extra spaces from the beginning and end of the string.
+# - This is useful to avoid unwanted spaces in user input.
+---------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to find the position of characters in a string using find() and index() methods.
+
+e="bhavik patel"
+print(e.find("p"))    # Returns the index of first occurrence of 'p'
+print(e.index("k"))   # Returns the index of first occurrence of 'k'
+-------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to split a string into words and access each word individually.
+
+g = e.split(" ")   # Splitting the string into a list of words
+print("g :", g)    # Displaying the list
+print(g[0])        # First word
+print(g[1])        # Second word
+print(g[2])        # Third word
+-------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to split a string at the first occurrence of a space using the partition() method.
+
+g = "bhavik patel k"
+
+r = g.partition(" ")   # Partition the string at the first space
+print("r:", r[0])      # Display the first part before the space
+---------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to check if a string contains only digits or numeric characters.
+
+g = "1234567891"
+
+print(g.isdigit())    # Returns True if all characters are digits
+print(g.isnumeric())  # Returns True if all characters are numeric
+---------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to convert a string to title case using the title() method.
+
+g="bhavik arvindkumar patel"
+print(g.title())
+# Converts the first character of each word to uppercase
+---------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to capitalize the first character of a string using the capitalize() method.
+
+print(g.capitalize())
+# Capitalizes only the first character of the string
+--------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to check if a string is alphanumeric using the isalnum() method.
+
+g="deep 123"
+print(g.isalnum())
+# Returns True if all characters are alphanumeric (letters or numbers) and no spaces
+--------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to check if a string is a valid Python identifier using the isidentifier() method.
+
+g="is"
+print(g.isidentifier())
+
+# Returns True if the string is a valid identifier
+---------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to center a string with a specific width and fill character, then convert it to uppercase.
+
+g="hello bhavik"
+print(g.center(89,"*").upper())
+ # Center the string in 89 characters, fill with '*', then convert to uppercase
+--------------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to assign the same value to multiple variables and print them.
+
+s=r=t=67   # Assigning 67 to s, r, and t
+print(s)   # Prints 67
+print(r)   # Prints 67
+print(t)    # Prints 67

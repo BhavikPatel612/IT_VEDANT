@@ -1,0 +1,180 @@
+------------------------------------------------------------------------------------------------------------------
+ERROR HANDLING
+---------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to continuously take names from the user,
+# store them in a list, and stop when the user types "stop",
+# using try-except-else-finally.
+
+s = []  # Empty list to store names
+
+while True:
+    try:
+        d = input("enter your name:(you can go exit write stop)")
+        if d.lower() == "stop":   # Stop condition
+            break
+        s.append(d)               # Add name to list
+        print(s)
+    except NameError:
+        print("name is not defined in double quotation")
+    else:
+        print("welcome to the list you can add another element")
+    finally:
+        print("Happy to join our team")
+
+# Comment:
+# This program demonstrates:
+# - Using an infinite while loop for continuous input
+# - Storing user input in a list
+# - Using 'stop' as a condition to exit the loop
+# - try-except-else-finally for error handling
+# - finally block always executes whether error occurs or not
+--------------------------------------------------------------------------------------------------------------------------
+FILE HANDLING
+---------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to create a new file
+# using file handling with mode "x".
+
+f = open("worker2.txt", "x")  # "x" mode creates a new file
+f.close()                    # Close the file
+print("file created successfully")
+------------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to write data into a file
+# using file handling with mode "w".
+
+f = open("worker2.txt", "w")   # "w" mode opens file for writing
+f.write("hi bro howz you \nwhat is your name")  # Write data to file
+f.close()                      # Close the file
+print("file wrote successfully")
+-------------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to append new data to an existing file
+# using file handling with mode "a".
+
+f = open("worker2.txt", "a")   # "a" mode opens file for appending
+f.write("\nmy name is bhavik") # Add new data in a new line
+f.close()                      # Close the file
+print("file added successfully")
+----------------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to read data from a file
+# using file handling with mode "r".
+
+f = open("worker2.txt", "r")   # "r" mode opens file for reading
+print(f.read(500))             # Read first 500 characters from file
+f.close()                      # Close the file
+--------------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to append and read data from a file
+# using file handling with mode "a+".
+
+f = open("worker2.txt", "a+")        # "a+" mode allows appending and reading
+f.write("\nhi my name is jayesh")    # Add data in a new line
+f.seek(0)                            # Move cursor to the beginning of the file
+print(f.read())                      # Read and display file data
+f.close()                            # Close the file
+---------------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to create a text file at a specific location
+# using an absolute file path.
+
+f = open("C:\\Users\\DELL\\Desktop\\tops.txt", "x")  # Create file using full path
+f.close()                                           # Close the file
+print("text file created successfully")
+------------------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to create a file using a raw string path,
+# write data into it, and then read the data.
+
+# r prefix makes the string a raw string,
+# so backslashes are treated as normal characters
+df = open(r"C:\Users\DELL\Desktop\tops1.txt", "w+")  # Create file and open for read & write
+df.write("hi bro")                                  # Write data to file
+df.seek(0)                                          # Move cursor to the beginning
+print(df.read())                                    # Read and display file data
+df.close()                                          # Close the file
+--------------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to write data to a file at a specific location
+# and then read the data using file handling.
+
+f = open("C:\\Users\\DELL\\Desktop\\tops.txt", "w+")  # Open file with full path in write & read mode
+f.write("welcome to the tops technology")             # Write data to file
+f.seek(0)                                             # Move cursor to the beginning
+print(f.read())                                       # Read and display file data
+f.close()                                             # Close the file
+print("Text file read and write successfully")
+----------------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to append new data to an existing file
+# using an absolute file path and then read the file.
+
+f = open("C:\\Users\\DELL\\Desktop\\tops.txt", "a+")   # Open file in append & read mode
+f.write("\nIn tops technology you choose data analytics.")  # Append data in new line
+f.seek(0)                                              # Move cursor to the beginning
+print(f.read())                                        # Read and display file content
+f.close()                                              # Close the file
+print("Text file more data add and read successfully")
+---------------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to append a list into a file
+# by converting the list into a string and then read the file.
+
+f = open("C:\\Users\\DELL\\Desktop\\tops.txt", "a+")   # Open file in append & read mode
+e = ["himanshi", "megha", "kandarp", "simit", "shreyansh", "bhavik"]
+
+f.write(str(e) + "\n")   # Convert list to string and append in new line
+f.seek(0)                # Move cursor to the beginning
+print(f.read())          # Read and display file content
+f.close()                # Close the file
+-------------------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to append and read data from a file
+# using the 'with' statement (context manager).
+
+with open("worker.txt", "a+") as f:   # 'as f' creates an alias for the file object
+    f.write("\nyou are so cute.")      # Append data to file
+    f.seek(0)                          # Move cursor to the beginning
+    print(f.read())                    # Read and display file content
+-------------------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to copy the contents of one file
+# (worker.txt) into another file (worker2.txt)
+# using the 'with' statement (context manager).
+
+with open("worker.txt") as a:              # Open source file in read mode
+    with open("worker2.txt", "w") as f:    # Open destination file in write mode
+        for i in a:                        # Read file line by line
+            f.write(i)                     # Write each line into new file
+        print("File copied successfully")  # Success message
+----------------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to check if a file exists,
+# and delete it if it exists using the 'os' module.
+
+import os
+
+# Check if the file exists at the given path
+if os.path.exists("C:\\Users\\DELL\\Desktop\\tops1.txt"):
+    os.remove("C:\\Users\\DELL\\Desktop\\tops1.txt")   # Delete the file
+    print("File deleted successfully.")                # Success message
+else:
+    print("File does not exist.")                      # File not found message
+-------------------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to append data to a file,
+# and read its content using the 'with' statement.
+# Demonstrate the use of file pointer methods: tell() and seek().
+
+with open("C:\\Users\\DELL\\Desktop\\tops.txt", "a+") as dfg:  
+    dfg.write("\n\nokk done")                # Append data to the file
+    print(dfg.tell())                         # tell() shows current pointer position after writing
+
+    dfg.seek(0)                               # Move cursor to the beginning of the file
+    print("2:", dfg.tell())                    # Pointer position after seek(0)
+    
+    print(dfg.read())                          # Read and display the file content
+    print("3:", dfg.tell())                    # Pointer position after reading
+-------------------------------------------------------------------------------------------------------------------------------------

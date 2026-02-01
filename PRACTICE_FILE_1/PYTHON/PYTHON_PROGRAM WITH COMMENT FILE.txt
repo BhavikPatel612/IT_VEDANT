@@ -1,0 +1,2331 @@
+# Question:
+# Write a Python program to print "hello" and "hi" on the screen.
+
+print ("hello")
+print ("hi")
+
+# Comment:
+# This program uses the print() function to display text on the console. 
+# First it prints "hello", then it prints "hi".
+-------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to print multi-line messages using triple quotes.
+
+print(""" hi bro
+hows you
+are you f9""")
+print ("""hi bro 
+are you comming with me """)
+
+# Comment:
+# This program demonstrates printing multi-line strings using triple quotes (""").
+# Each print() outputs the text exactly as written, preserving line breaks.
+-------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to display the memory addresses (IDs) of variables a, b, and c.
+
+a=7 
+b=14
+c=13
+print ("id a :",id(a))
+print ("id b :",id(b))
+print ("id c :",id(c))
+
+# Comment:
+# The id() function returns the unique memory address of an object in Python.
+# Here, we print the IDs of variables a, b, and c.
+# The comment "#garbagecollector" indicates that Python's memory management handles these objects automatically.
+-------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to demonstrate all basic arithmetic operations between two numbers.
+
+#Arithmetic operator
+a=6
+b=10
+print ("Subtraction    :",a-b)
+print ("Addition       :",a+b)
+print ("Multiplication :",a*b)
+print ("Division       :",a/b)
+print ("Modulus        :",a%b)
+print ("Exponention    :",a**b)
+print ("Floor division :",a//b)
+
+# Comment:
+# This program shows how Python performs arithmetic operations between two numbers.
+# - Subtraction (-) subtracts b from a
+# - Addition (+) adds a and b
+# - Multiplication (*) multiplies a and b
+# - Division (/) divides a by b and returns a float
+# - Modulus (%) gives the remainder of a divided by b
+# - Exponentiation (**) raises a to the power of b
+# - Floor division (//) divides a by b and returns the integer part only
+-----------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to demonstrate membership operators on a string.
+
+a="hello world"
+print ("h" in a)
+print  ("ww" in a)
+print  ("y" not in a)
+print ("ll" not in a)
+
+# Comment:
+# Membership operators check if a value exists in a sequence (like a string, list, etc.).
+# - 'in' returns True if the value is found
+# - 'not in' returns True if the value is not found
+# Here, we test several substrings in the string 'a'.
+-----------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to demonstrate comparison operators between two numbers.
+a=4
+b=6
+print (a>b)
+print (a<b)
+print (a==b)
+print (a!=b)
+print (a<=b)
+print (a<=b)
+
+# Comment:
+# Comparison operators compare two values and return a boolean (True or False).
+# - '>' Greater than
+# - '<' Less than
+# - '==' Equal to
+# - '!=' Not equal to
+# - '<=' Less than or equal to
+# - '>=' Greater than or equal to
+---------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to demonstrate logical operators (and, or, not) between two numbers.
+
+# Program:
+# Logical operator example
+
+a=5
+b=5
+print (a>=b and a==b)
+print (a>b or a==b)
+print (not(a>=b and a==b))
+
+
+# Comment:
+# Logical operators combine boolean expressions:
+# - 'and' returns True only if both conditions are True
+# - 'or' returns True if at least one condition is True
+# - 'not' negates the boolean value of the condition
+# Here, the program checks different combinations of comparisons between a and b.
+----------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to demonstrate assignment operations on a variable.
+
+#assignment operator
+x=6
+x=x+6
+x=x/5
+x=x-2
+x=x*12
+
+print(x)
+
+
+# Comment:
+# Assignment operators are used to update the value of a variable.
+# - Here, x is updated step by step using standard assignment (=) after performing arithmetic operations.
+# - Python also supports shorthand operators like x += 6, x /= 5, etc., which combine operation and assignment.
+-------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to demonstrate identity operators (is, is not) with strings and numbers.
+
+a="hello"
+b="words"
+f=12
+d=12
+print (a is b)
+print (a is not b)
+print (f is d)
+
+
+# Comment:
+# Identity operators compare whether two variables point to the same object in memory:
+# - 'is' returns True if both variables refer to the same object
+# - 'is not' returns True if they refer to different objects
+--------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to demonstrate bitwise operators (&, |, ^) between two numbers.
+
+a=10
+b=8
+print (a & b)  # Bitwise AND: 1 if both bits are 1
+print (a | b)   # Bitwise OR: 1 if at least one bit is 1
+print (a ^ b)  # Bitwise XOR: 1 if bits are different
+---------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to take user input for school details and display them.
+
+print ("school detais")
+schoolname = (input("enter your school name"))
+name = (input("enter your name :"))
+age = int(input("enter your age :"))
+weight = float(input("enter your weight:"))
+print (schoolname)
+print (name)
+print (age)
+print (weight)
+
+# Comment:
+# This program demonstrates how to take different types of input from the user:
+# - input() returns a string by default
+# - int() converts input to an integer
+# - float() converts input to a floating-point number
+# Then, it prints each input value to the console.
+--------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to check if marks are greater than 70 and print a message.
+
+marks = 80
+if marks > 70:
+    print ("you are excelent")
+
+# Comment:
+# This program demonstrates a simple if statement in Python.
+# - The condition 'marks > 70' is checked.
+# - If the condition is True, the indented block under 'if' executes and prints the message.
+# - If the condition were False, nothing would be printed.
+-----------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to check marks and print a message using if-else statement.
+
+marks = 80
+if marks > 70:
+    print ("you are excelent")
+else:
+     print ("poor performance")
+
+# Comment:
+# This program demonstrates an if-else statement:
+# - The condition 'marks > 70' is checked.
+# - If True, it prints "You are excellent".
+# - If False, it prints "Poor performance".
+# The 'else' block executes only when the 'if' condition is False.
+--------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to categorize a person's age using if-elif-else statements.
+
+age = int(input("enter your age here :"))
+if age > 65:
+    print ("you is older")
+elif age <=65 and age >=18:
+    print ("you is adult")
+elif age < 18 and age>=12:
+    print ("you is teenagar")
+elif age<12 and age >=3:
+    print ("you is child")
+elif age<3 and age>0:
+    print ("todler")
+else:
+    print ("age invalid")
+
+# Comment:
+# This program demonstrates multiple conditions using if-elif-else:
+# - It checks the age range and prints the appropriate category.
+# - Conditions are evaluated from top to bottom; the first True condition executes.
+# - The 'else' block handles invalid or negative ages.
+-----------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to print numbers starting from 1 and multiplying by 5 each time
+# until it exceeds 100 using a while loop.
+
+n=1
+while n<=100:
+    print(n)
+    n*=5
+
+# Comment:
+# This program demonstrates a while loop:
+# - The loop continues as long as the condition 'n <= 100' is True.
+# - In each iteration, n is printed and then multiplied by 5.
+# - The loop stops when n becomes greater than 100.
+-----------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program using a while loop that increments a number by 5 each time but
+# skips printing 42 using continue.
+r = 2  
+while r < 50:
+    r += 5
+    if r == 42:
+        continue
+    print(r) 
+
+# Comment:
+# This program demonstrates the use of 'continue' in a while loop:
+# - In each iteration, r is increased by 5.
+# - If r equals 42, 'continue' skips the rest of the loop body for that iteration, so 42 is not printed.
+# - The loop continues until r >= 50.
+------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to print numbers from 1 to 11 using a for loop.
+
+for i in range(1,12):      #for loop 1 se 12 range me print karvane ke liye
+    print(i)
+
+# Comment:
+# This program demonstrates a for loop with the range() function:
+# - range(1, 12) generates numbers from 1 up to, but not including, 12.
+# - The loop iterates over each number and prints it.
+# - For loops are commonly used when the number of iterations is known.
+------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to print numbers from 1 to 11 with a step of 3 using a for loop.
+
+for i in range(1,12,3):          #(start,end,steps)
+    print(i,end=" ")
+
+
+# Comment:
+# This program demonstrates the use of range() with three arguments:
+# - start = 1 (starting number)
+# - end = 12 (ending number, not included)
+# - step = 3 (increment by 3 each time)
+# The 'end=" "' parameter prints all numbers on the same line separated by spaces.
+----------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to iterate over a sequence and print each element separated by '*'.
+
+color=("black,white,red")
+for y2 in color:
+    print(y2,end="*")
+
+# Comment:
+# This program uses a for loop to iterate over the variable 'color'.
+# Here, 'color' looks like a tuple but it actually contains a single string.
+# So the loop iterates over each character of the string one by one.
+# The 'end="*"' prints an asterisk after each character on the same line.
+--------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to check the data type of a variable and demonstrate the upper() string method.
+
+y="hello"
+print(type(y))
+y.upper()
+
+# Comment:
+# Prints the type of variable y
+# Converts the string to uppercase (but does not change y)
+--------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to iterate through a string and skip a specific character using continue.
+
+y="hellobhavik"
+for y2 in y:
+    if y2 == "o":
+        continue
+    print(y2,end="*")
+
+# Comment:
+# This program demonstrates:
+# - Iterating over each character of a string using a for loop.
+# - Using 'continue' to skip a particular character ('o').
+# - All characters except 'o' are printed with '*' after each character.
+-------------------------------------------------------------------------------------------------------------------------
+INDEX AND SLISING AND STRING METHOD
+--------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to convert a string into uppercase letters using the upper() method.
+
+f= "my name is bhavik patel"  
+w = f.upper()  
+w       
+
+# Comment:
+# This program demonstrates the use of the upper() string method.
+# - The original string is stored in variable 'f'.
+# - The upper() method converts all characters to uppercase.
+# - The result is stored in variable 'w'.
+# - Strings are immutable, so the original string 'f' remains unchanged.
+-----------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to access the first character of a string using indexing.
+
+f[0]  #indexing
+# Comment:
+# This program demonstrates string indexing in Python.
+# - Strings are indexed starting from 0.
+# - f[0] returns the first character of the string.
+-------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to extract the first five characters of a string using slicing.
+
+f[0:5] # slicing
+
+ # Slicing from index 0 to 4
+---------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to access the complete string using slicing.
+
+f[:]    
+
+ # Accessing the entire string
+----------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to extract characters from a string using slicing with a step value.
+
+f[::3]  # [start,end,step]
+# Slicing with step value 3
+-----------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to remove the last two characters of a string using slicing.
+
+f[:-2] 
+# Slicing to exclude the last two characters
+---------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to extract a substring using both positive and negative indices.
+
+f[4:-3]
+# Slicing from index 4 to third last character
+-------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to find the position of a substring in a string using the find() method.
+
+f.find("bha")  
+# Finding the starting index of substring "bha"
+-------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to replace a word in a string using the replace() method.
+
+f.replace("bhavik","BHAVIK") 
+# # Replacing 'bhavik' with 'BHAVIK'
+-------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to take a name as input from the user and display it.
+
+name=(input("enter your name here :"))
+name
+# Comment:
+# This program demonstrates taking string input from the user.
+# - input() function is used to take input from the keyboard.
+# - The input is stored in the variable 'name' as a string.
+# - print() is used to display the entered value.
+# Displaying the entered name
+-----------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to find the length of a string using the len() function.
+
+len(name)
+
+# Comment:
+# This program demonstrates the use of the len() function:
+# - len() returns the total number of characters in a string (including spaces if present).
+# - strip() ensures there are no leading or trailing spaces.
+# - The result is an integer representing the length of the string.
+-----------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to take a name as input and remove extra spaces using the strip() method
+
+name=(input("enter your name here :")).strip()
+name
+
+# Comment:
+# This program demonstrates the use of the strip() method:
+# - input() takes the name from the user.
+# - strip() removes extra spaces from the beginning and end of the string.
+# - This is useful to avoid unwanted spaces in user input.
+---------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to find the position of characters in a string using find() and index() methods.
+
+e="bhavik patel"
+print(e.find("p"))    # Returns the index of first occurrence of 'p'
+print(e.index("k"))   # Returns the index of first occurrence of 'k'
+-------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to split a string into words and access each word individually.
+
+g = e.split(" ")   # Splitting the string into a list of words
+print("g :", g)    # Displaying the list
+print(g[0])        # First word
+print(g[1])        # Second word
+print(g[2])        # Third word
+-------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to split a string at the first occurrence of a space using the partition() method.
+
+g = "bhavik patel k"
+
+r = g.partition(" ")   # Partition the string at the first space
+print("r:", r[0])      # Display the first part before the space
+---------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to check if a string contains only digits or numeric characters.
+
+g = "1234567891"
+
+print(g.isdigit())    # Returns True if all characters are digits
+print(g.isnumeric())  # Returns True if all characters are numeric
+---------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to convert a string to title case using the title() method.
+
+g="bhavik arvindkumar patel"
+print(g.title())
+# Converts the first character of each word to uppercase
+---------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to capitalize the first character of a string using the capitalize() method.
+
+print(g.capitalize())
+# Capitalizes only the first character of the string
+--------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to check if a string is alphanumeric using the isalnum() method.
+
+g="deep 123"
+print(g.isalnum())
+# Returns True if all characters are alphanumeric (letters or numbers) and no spaces
+--------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to check if a string is a valid Python identifier using the isidentifier() method.
+
+g="is"
+print(g.isidentifier())
+
+# Returns True if the string is a valid identifier
+---------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to center a string with a specific width and fill character, then convert it to uppercase.
+
+g="hello bhavik"
+print(g.center(89,"*").upper())
+ # Center the string in 89 characters, fill with '*', then convert to uppercase
+--------------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to assign the same value to multiple variables and print them.
+
+s=r=t=67   # Assigning 67 to s, r, and t
+print(s)   # Prints 67
+print(r)   # Prints 67
+print(t)    # Prints 67
+------------------------------------------------------------------------------------------------------------------------------------
+LIST 
+-----------------------------------------------------------------------------------------------------------------------------------
+e="python","sql",8,58  # do not modify data in tuple.
+e
+----------------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to create a list containing different data types and display it
+
+r = ["world","mysql",1234,True,12.5]  # Creating a list with strings, integer, boolean, and float
+r
+
+----------------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to display the data type of a variable containing a list.
+
+print(type(r))
+ # Displays the type of variable r
+-------------------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to iterate through all elements of a list using a for loop.
+
+for h in r:
+    print(h)  # Prints each element of the list
+------------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to demonstrate slicing of a list with step values.
+
+r = ["world", "mysql", 1234, True, 12.5]
+
+print(r[0::2])   # Slicing from index 0, every 2nd element
+print(r)         # Displaying the original list
+print(r[::2])    # Slicing with default start index 0, every 2nd element
+--------------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to demonstrate adding elements to a list using append(), insert(), and extend() methods.
+
+d.append("excell")     # Adds a single element at the end
+print(d)
+d.insert(1,777)    # Inserts 777 at index 1
+print(d)
+r=[34,"quality"]
+d.extend(r)          # Adds multiple elements at the end
+print(d)
+-------------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to replace an element in a list using indexing.
+
+d[-1]="teblue"   # Replacing the last element ('quality') with 'teblue'
+d
+-----------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to replace multiple elements in a list using slicing.
+
+d[0:3]= ["python"]   # Replacing the first three elements with a single element "python"
+d
+------------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to remove and return the last element of a list using the pop() method.
+d=["hello",123,True,12.2]
+d
+print(d)  # Display the original list
+print(d.pop())  # Removes and returns the last element
+print(d)          # Display the list after popping
+-----------------------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to remove and return an element at a specific index in a list using pop().
+
+d = ["python", "hello", "excell", 34, "teblue"]  # Example list
+
+print(d)          # Display the original list
+print(d.pop(1))   # Removes and returns the element at index 1 ("hello")
+print(d)          # Display the list after popping
+-------------------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to take multiple inputs for IDs and names, store them in separate lists, and display them.
+
+rt = []  # List to store names
+idd = []  # List to store IDs
+for j in range(1,6):
+    id3 = int(input("Enter ur ids : ")) 
+    rt3 = input("enter ur name :")
+    idd.append(id3) 
+    rt.append(rt3)
+for i in range(5):
+    print("ID:", idd[i], " Name:", rt[i],end=" ")
+
+# Comment:
+# This program demonstrates:
+# - Using lists to store multiple values of the same type (IDs and names separately).
+# - Using a for loop to take multiple inputs from the user.
+# - Using a second loop to access and print elements from both lists.
+# - Lists maintain the order of elements, so the ith ID corresponds to the ith name.
+--------------------------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to create a copy of a list and demonstrate that changes in the copy do not affect the original list.
+m = ["mother", 123, 12.4, True]  # Original list
+
+r = m.copy()        # Creating a shallow copy of the list
+print(r)            # Displaying the copied list
+
+r[1] = "brother"    # Modifying the copy
+print(r)            # Displaying the modified copy
+print(m)            # Displaying the original list to show it remains unchanged
+-------------------------------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to demonstrate sorting a list and explain why sorting fails with mixed data types.
+
+f = ["srd", 123, 12.3, "hello", True]
+print(f)   # Original list
+
+s = f.sort()  # Attempting to sort the list
+print(s)      # sort() returns None
+print(f)      # Original list after attempting to sort
+---------------------------------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to sort a list of numbers and explain how sort() works.
+
+# Program:
+f = [123, 456, 789]
+print(f)       # Original list
+
+s = f.sort()   # sort() sorts the list in-place and returns None
+print(s)       # Prints None because sort() does not return the sorted list
+print(f)       # The original list is now sorted
+---------------------------------------------------------------------------------------------------------------------------------------------
+Tuples method
+---------------------------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to demonstrate the use of indexing in a tuple
+# and find the index position of a given element.
+
+d=("hi","bro","bro","123") #indexing tupple ke andar
+d.index("hi")
+# Tuple with multiple elements
+--------------------------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to count how many times a specific element
+# appears in a tuple using the count() method.
+
+d.count("bro")
+
+# Comment:
+# This program demonstrates:
+# - Creating a tuple
+# - Using the count() method with a tuple
+# - Counting how many times a specific value appears in the tuple
+# - count() returns the total number of occurrences of the given element
+-------------------------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to demonstrate how to modify a tuple
+# using an indirect method by converting it into a list.
+
+f = ("bhavik", 123, 23.4, True, "yes")
+print(f)  # Original tuple (tuple elements cannot be changed directly)
+
+r = list(f)      # Convert tuple into list
+r[1] = "arvind"  # Modify element using list indexing
+
+f = tuple(r)     # Convert list back into tuple
+print(f)
+
+# Comment:
+# This program demonstrates:
+# - Tuples are immutable (cannot be modified directly)
+# - Converting a tuple into a list to modify elements
+# - Using indexing to replace an element in the list
+# - Converting the list back into a tuple
+# - This is called an indirect method of modifying a tuple
+------------------------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to demonstrate packing and unpacking
+# of elements using both tuple and list.
+
+# Tuple unpacking
+f, s, d = ("dish", "bhavik", "hello")
+print(f)
+print(s)
+print(d)
+
+print()
+
+# List unpacking
+g, h, i = ["hi", "bro", "welcome"]
+print(g)
+print(h)
+print(i)
+
+# Comment:
+# This program demonstrates:
+# - Packing values into a tuple and a list
+# - Unpacking tuple elements into separate variables
+# - Unpacking list elements into separate variables
+# - Packing and unpacking works the same way for both lists and tuples
+-------------------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to take user input for name and age
+# and display the output using string formatting.
+
+name = input("Enter your name here: ")
+age = int(input("Enter your age here: "))
+
+e = ("My name is {0} and my age is {1}.")
+print(e.format(name, age))
+
+# Comment:
+# This program demonstrates:
+# - Taking user input using input()
+# - Type casting input from string to integer
+# - Using string format() method
+# - Replacing placeholders with user-provided values
+------------------------------------------------------------------------------------------------------------------------------------
+SET{} METHOD
+--------------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to store multiple values in a set
+# and display its elements using a for loop.
+
+sett = {"hibro", 123, 23.4, True}  # Set with different data types
+print(sett)
+
+for h in sett:
+    print(h)
+
+# Comment:
+# This program demonstrates:
+# - Creating a set with multiple values
+# - Sets store unique and unordered elements
+# - Using a for loop to iterate through a set
+# - Printing each element of the set
+---------------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to demonstrate set operations
+# such as printing a set, checking its length, and removing elements using pop().
+
+print(sett)            # Print the set
+print(len(sett))       # Check length before removing an element
+print(sett.pop())      # Remove and return a random element (no fixed index)
+print(sett)            # Print set after removal
+print(len(sett))       # Check length after removal
+
+# Comment:
+# This program demonstrates:
+# - Printing a set
+# - Using len() to find the number of elements in a set
+# - Using pop() method in a set
+# - pop() removes a random element because sets are unordered
+# - Checking the updated set and its length after removal
+----------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to demonstrate how to update a set
+# by adding elements from another set using the update() method.
+
+r = {"hi", True, 123, 12.3}   # Initial set
+print("r:", r)
+
+s = {"hello", 345}           # Second set
+print("s:", s)
+
+r.update(s)                  # Update r by adding elements of s
+print("print r (s ko r ke andar update kiya):", r)
+
+# Comment:
+# This program demonstrates:
+# - Creating sets with multiple values
+# - Using update() method to add elements from another set
+# - update() adds all elements and ignores duplicates
+# - Sets store only unique elements
+-------------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to demonstrate how to merge two sets
+# using the union() method.
+
+f = r.union(s)   # Merge both sets into a new set
+f
+
+# Comment:
+# This program demonstrates:
+# - Using union() method with sets
+# - Merging elements of two sets into a new set
+# - union() returns a new set and does not modify the original sets
+# - Duplicate values are automatically removed
+------------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to find common elements
+# between two sets using the intersection() method.
+
+r = {"hi", "hello", 123, 12.2}   # First set
+f = {"hi", "hello", 34, 56.7}    # Second set
+
+r.intersection(f)
+
+# Comment:
+# This program demonstrates:
+# - Creating two sets
+# - Using intersection() method with sets
+# - intersection() returns only common elements from both sets
+# - The original sets remain unchanged
+----------------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to demonstrate the use of
+# intersection_update() method with sets.
+
+d = r.intersection_update(f)   # Updates r with common elements
+print(r)
+
+v = f.intersection_update(r)   # Updates f with common elements
+print(f)
+
+# Comment:
+# This program demonstrates:
+# - Using intersection_update() method with sets
+# - intersection_update() modifies the original set
+# - Only common elements are kept in the set
+# - The method returns None
+----------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to find the difference between two sets
+# using the difference() method.
+
+g = {"hello", "hi", 123, 23.4, True}
+h = {"hello", "hi", 567, 12.3}
+
+print(g.difference(h))  # Elements present in g but not in h
+print(h.difference(g))  # Elements present in h but not in g
+
+# Comment:
+# This program demonstrates:
+# - Creating two sets
+# - Using difference() method with sets
+# - difference() returns elements that are not common
+# - Order of elements in sets is not fixed
+-------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to demonstrate difference_update() method with sets,
+# which updates the original set by removing elements found in another set.
+
+g = {"hello", "hi", 123, 23.4, True}
+h = {"hello", "hi", 567, 12.3}
+
+print(g.difference_update(h))  # Removes elements of h from g (updates g)
+print(g)                        # Updated g
+
+print(h.difference_update(g))  # Removes elements of g from h (updates h)
+print(h)                        # Updated h
+
+# Comment:
+# This program demonstrates:
+# - Using difference_update() method with sets
+# - difference_update() modifies the original set directly
+# - Only elements not in the other set are kept
+# - The method returns None
+----------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to demonstrate removing elements from a set
+# using remove() and pop() methods.
+
+g.remove(True)  # Remove a specific element from the set
+print(g)
+
+h.pop()         # Remove a random element from the set (no indexing in sets)
+print(h)
+
+# Comment:
+# This program demonstrates:
+# - Using remove() to delete a specific element from a set
+# - Using pop() to remove and return an arbitrary element
+# - Sets are unordered, so pop() removes a random element
+# - Trying to remove a non-existing element with remove() will raise an error
+----------------------------------------------------------------------------------------------------------------------
+DICTIONARY
+--------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to create and display a dictionary
+# with keys and their corresponding values.
+
+si = {
+    "id": 123,
+    "name": "bhavik"
+}
+si  # Display the dictionary
+
+# Comment:
+# This program demonstrates:
+# - Creating a dictionary with key-value pairs
+# - Accessing or displaying the entire dictionary
+# - Dictionaries store data in key-value format
+--------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to find the number of key-value pairs in a dictionary.
+
+si = {
+    "id": 123,
+    "name": "bhavik"
+}
+
+len(si)  # Returns the number of items in the dictionary
+
+# Comment:
+# This program demonstrates:
+# - Using len() to get the number of key-value pairs in a dictionary
+# - Dictionaries store data in key-value pairs
+# - len() counts how many keys are present in the dictionary
+---------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to add a new key-value pair to a dictionary.
+
+si["c_name"]="n.b.patel"
+si
+# Comment:
+# This program demonstrates:
+# - Adding a new key-value pair to a dictionary
+# - Using dictionary[key] = value syntax to update or add data
+# - Displaying the updated dictionary to confirm the addition
+------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to update a dictionary with another dictionary using the update() method.
+
+si = {
+    "id": 123,
+    "name": "bhavik",
+    "c_name": "n.b.patel"
+}
+
+si.update({"clgname": "topsinstitute"})  # Add/update key-value pairs using update()
+si  # Display updated dictionary
+
+# Comment:
+# This program demonstrates:
+# - Using update() to add new key-value pairs to a dictionary
+# - update() can also modify existing keys if the key already exists
+# - Displaying the dictionary after the update
+---------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to create a dictionary where each key maps to a list of values.
+
+d = {
+    "name": ["bhavik", "jay", "yash"],
+    "age": [25, 23, 24],
+    "sex": ["male", "female", "male"]
+}
+
+d  # Display the dictionary
+
+# Comment:
+# This program demonstrates:
+# - Creating a dictionary with lists as values
+# - Each key can hold multiple related values
+# - Accessing the dictionary will show all keys and their corresponding lists
+------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to get all the values from a dictionary.
+
+d = {
+    "name": ["bhavik", "jay", "yash"],
+    "age": [25, 23, 24],
+    "sex": ["male", "female", "male"]
+}
+
+d.values()  # Returns all values in the dictionary as a view object
+
+# Comment:
+# This program demonstrates:
+# - Using the values() method to access all dictionary values
+# - The returned object is a view, not a list
+# - Useful for iterating over all values in a dictionary
+----------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to get all the keys from a dictionary.
+
+d = {
+    "name": ["bhavik", "jay", "yash"],
+    "age": [25, 23, 24],
+    "sex": ["male", "female", "male"]
+}
+
+d.keys()  # Returns all keys in the dictionary as a view object
+
+# Comment:
+# This program demonstrates:
+# - Using the keys() method to access all dictionary keys
+# - The returned object is a view, not a list
+# - Useful for iterating over all keys in a dictionary
+----------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to get all key-value pairs from a dictionary.
+
+d = {
+    "name": ["bhavik", "jay", "yash"],
+    "age": [25, 23, 24],
+    "sex": ["male", "female", "male"]
+}
+
+d.items()  # Returns all key-value pairs as a view object
+
+# Comment:
+# This program demonstrates:
+# - Using the items() method to access all key-value pairs in a dictionary
+# - The returned object is a view, not a list
+# - Useful for iterating over keys and their corresponding values
+-------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to iterate over all values in a dictionary and print them.
+
+d = {
+    "name": ["bhavik", "jay", "yash"],
+    "age": [25, 23, 24],
+    "sex": ["male", "female", "male"]
+}
+
+for h in d.values():
+    print(h)  # Print each value (which are lists in this case)
+
+# Comment:
+# This program demonstrates:
+# - Using values() to access all dictionary values
+# - Iterating over the values using a for loop
+# - Printing each value separately
+---------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to iterate over all keys in a dictionary and print them.
+
+d = {
+    "name": ["bhavik", "jay", "yash"],
+    "age": [25, 23, 24],
+    "sex": ["male", "female", "male"]
+}
+
+for h in d.keys():
+    print(h)  # Print each key in the dictionary
+
+# Comment:
+# This program demonstrates:
+# - Using keys() to access all dictionary keys
+# - Iterating over the keys using a for loop
+# - Printing each key separately
+-------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to iterate over all key-value pairs in a dictionary and print them.
+
+d = {
+    "name": ["bhavik", "jay", "yash"],
+    "age": [25, 23, 24],
+    "sex": ["male", "female", "male"]
+}
+
+for h in d.items():
+    print(h)  # Print each key-value pair as a tuple
+
+# Comment:
+# This program demonstrates:
+# - Using items() to access all key-value pairs in a dictionary
+# - Iterating over key-value pairs using a for loop
+# - Each iteration returns a tuple (key, value)
+----------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to combine two sets using the zip() function
+# and iterate over the paired elements.
+
+r = {1, 2, 3, 4, 5}
+z = {"yash", "raj", "bhavik", "ramesh", "jinal"}
+
+for h in zip(r, z):
+    print(h)  # Print each pair as a tuple
+
+# Comment:
+# This program demonstrates:
+# - Using zip() to combine elements from two sets
+# - Each iteration returns a tuple containing one element from each set
+# - Sets are unordered, so the pairing may not follow the original insertion order
+-----------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to remove the last inserted key-value pair from a dictionary
+# using the popitem() method.
+
+d = {
+    "name": ["bhavik", "jay", "yash"],
+    "age": [25, 23, 24],
+    "sex": ["male", "female", "male"]
+}
+
+print(d.popitem())  # Removes and returns the last inserted key-value pair
+print(d)            # Display dictionary after removal
+
+# Comment:
+# This program demonstrates:
+# - Using popitem() to remove the last inserted key-value pair
+# - The method returns the removed pair as a tuple (key, value)
+# - Dictionaries maintain insertion order (Python 3.7+)
+# - The original dictionary is modified
+----------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to take multiple user inputs in comma-separated format,
+# store them as lists inside another list, and display each user's details.
+
+f = []  # List to store all user details
+
+for i in range(5):
+    data = input("Enter your details separated by comma (name,address,city,state): ")
+    s = data.split(",")  # Split input string into a list
+    f.append(s)          # Append the list to the main list
+
+# Display each user's details
+print("user details 1:", f[0])
+print("user details 2:", f[1])
+print("user details 3:", f[2])
+print("user details 4:", f[3])
+print("user details 5:", f[4])
+
+# Comment:
+# This program demonstrates:
+# - Taking multiple comma-separated inputs from the user
+# - Using split() to convert input string into a list
+# - Storing each user's details as a sublist in a main list
+# - Accessing and printing each sublist using indexing
+# - Maintaining order of entry for easy reference
+--------------------------------------------------------------------------------------------------------------------------
+def function(define function)
+-------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to define a simple function and call it.
+
+def sum():         # Define a function named 'sum'
+    print("hi bro")  # Function body: prints a message
+
+# Call the function
+sum()
+
+# Comment:
+# This program demonstrates:
+# - Defining a function using def keyword
+# - Naming the function (here: sum)
+# - Writing a simple statement inside the function
+# - Calling the function to execute its code
+--------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to define a function with a parameter
+# and print a message using that parameter.
+
+def sum(w):     # Define a function 'sum' with parameter w
+    print(w, "hello guys")  # Print the parameter with a message
+
+# Example call
+sum("Bhavik")  # Pass an argument to the function
+
+# Comment:
+# This program demonstrates:
+# - Defining a function with a parameter
+# - Using the parameter inside the function
+# - Passing arguments when calling the function
+# - Functions with parameters are more flexible and reusable
+-----------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to call a function with different arguments.
+
+def sum(w):     # Function with one parameter
+    print(w, "hello guys")  # Print the argument with a message
+
+# Function calls with different arguments
+sum("hello bhavik")  # Pass first argument
+sum("look at me")    # Pass second argument
+
+# Comment:
+# This program demonstrates:
+# - Calling a function multiple times with different arguments
+# - How the parameter receives different values in each call
+# - Reusing the same function for different inputs        
+--------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to define a function with two parameters
+# and print their sum.
+
+def add(s, t):      # Define a function 'add' with two parameters
+    print(s + t)    # Print the sum of the parameters
+
+# Call the function with two arguments
+add(56, 78)
+
+# Comment:
+# This program demonstrates:
+# - Defining a function with multiple parameters
+# - Passing arguments to the function
+# - Performing addition inside the function
+# - Printing the result
+--------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to define a function with arbitrary arguments (*args)
+# and access specific elements inside the function.
+
+def sum(*w):      # *w allows passing arbitrary number of arguments
+    print(w[0], w[1], "are you f9?")  # Access the first two arguments
+
+# Example call
+sum("Bhavik", "Jay")  # Pass two arguments
+
+# Comment:
+# This program demonstrates:
+# - Using *args to allow a variable number of arguments
+# - Accessing elements of the tuple formed by *args using indexing
+# - Functions with arbitrary arguments are flexible for multiple inputs
+--------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to define a function with a default parameter
+# and print a message using that parameter.
+
+def cum(s=" "):    # Default parameter s is a space
+    print(s, "hi bro howz you?")  # Print the parameter with a message
+
+# Example calls
+cum()             # Call without argument, uses default value
+cum("Bhavik")     # Call with an argument
+
+# Comment:
+# This program demonstrates:
+# - Defining a function with a default parameter
+# - Using the default value if no argument is provided
+# - Overriding the default by passing an argument
+# - Default parameters make functions more flexible
+---------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to calculate the factorial of a number
+# using a for loop.
+
+num = 1
+fact = 1
+end = int(input("Enter last digit here: "))  # Take input from user
+
+for h in range(num, end + 1):
+    fact = fact * h  # Multiply each number in the range
+
+print(fact)  # Display factorial
+
+# Comment:
+# This program demonstrates:
+# - Calculating factorial using a for loop
+# - Initializing a variable to store the result
+# - Iterating from 1 to the given number
+# - Multiplying numbers sequentially to compute factorial
+# - Printing the final result
+----------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to define a function that calculates the factorial
+# of a number and prints the result.
+
+def fact(g):
+    num = 1
+    fact = 1
+    for h in range(num, g + 1):
+        fact = fact * h
+    print(fact)  # Print factorial of g
+
+# Function call
+fact(5)  # Call the function with argument 5
+
+# Comment:
+# This program demonstrates:
+# - Defining a function to calculate factorial
+# - Using a for loop inside a function
+# - Passing an argument to the function
+# - Printing the computed factorial
+# - Functions allow reusing the code with different inputs
+----------------------------------------------------------------------------------------------------------------------
+Define function with arbitary function with (list,tuple,set)(keys,values,items)
+----------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to define a function with arbitrary keyword arguments (**kwargs)
+# and print the received arguments.
+
+def crf(**r):    # **r allows passing arbitrary keyword arguments
+    print("What is your", r)  # Print all keyword arguments as a dictionary
+
+# Function call with multiple keyword arguments
+crf(name1="ramesh", name2="bhavik", name3="jayesh")
+
+# Comment:
+# This program demonstrates:
+# - Using **kwargs to accept arbitrary keyword arguments in a function
+# - Keyword arguments are stored as a dictionary inside the function
+# - Printing the dictionary shows all key-value pairs passed
+# - Functions with **kwargs are flexible for varying number of named inputs
+--------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to define a function with arbitrary keyword arguments (**kwargs)
+# and print only the keys as a tuple.
+
+def crf(**r):    # **r allows passing arbitrary keyword arguments
+    print("What is your", tuple(r.keys()))  # Convert keys to a tuple and print
+
+# Function call with multiple keyword arguments
+crf(name1="ramesh", name2="bhavik", name3="jayesh")
+
+# Comment:
+# This program demonstrates:
+# - Using **kwargs to accept arbitrary keyword arguments in a function
+# - Accessing only the keys of the keyword arguments
+# - Converting dictionary keys to a tuple for display
+# - Flexible functions with named arguments
+---------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to define a function with arbitrary keyword arguments (**kwargs)
+# and print only the values as a list.
+
+def crf(**r):    # **r allows passing arbitrary keyword arguments
+    print("What is your", list(r.values()))  # Convert values to a list and print
+
+# Function call with multiple keyword arguments
+crf(name1="ramesh", name2="bhavik", name3="jayesh")
+
+# Comment:
+# This program demonstrates:
+# - Using **kwargs to accept arbitrary keyword arguments in a function
+# - Accessing only the values of the keyword arguments
+# - Converting dictionary values to a list for display
+# - Functions with **kwargs are flexible for varying number of named inputs
+-----------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to define a function with arbitrary keyword arguments (**kwargs)
+# and print the key-value pairs as a set.
+
+def crf(**r):    # **r allows passing arbitrary keyword arguments
+    print("What is your", set(r.items()))  # Convert key-value pairs to a set and print
+
+# Function call with multiple keyword arguments
+crf(name1="ramesh", name2="bhavik", name3="jayesh")
+-----------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to define a function with arbitrary keyword arguments (**kwargs)
+# and print the first key-value pair as a tuple.
+
+def crf(**r):    # **r allows passing arbitrary keyword arguments
+    print("What is your age", tuple(r.items())[0])  # Access the first key-value pair
+
+# Function call with multiple keyword arguments
+crf(name1="ramesh", name2="bhavik", name3="jayesh")
+---------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to define a function with arbitrary keyword arguments (**kwargs)
+# and print the first value from the passed arguments as a list element.
+
+def crf(**r):    # **r allows passing arbitrary keyword arguments
+    print("What is your age", list(r.values())[0])  # Access the first value
+
+# Function call with multiple keyword arguments
+crf(name1="ramesh", name2="bhavik", name3="jayesh")
+---------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to define a function with arbitrary keyword arguments (**kwargs)
+# and print the first key from the passed arguments as a tuple element.
+
+def crf(**r):    # **r allows passing arbitrary keyword arguments
+    print("What is your age", tuple(r.keys())[0])  # Access the first key
+
+# Function call with multiple keyword arguments
+crf(name1="ramesh", name2="bhavik", name3="jayesh")
+------------------------------------------------------------------------------------------------------------------------
+LAMBDA FUNCTION
+-------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to create a lambda function that adds two numbers
+# and call it with arguments.
+
+d = lambda s, r: s + r  # Lambda function to add two numbers
+
+d(5, 6)  # Call the lambda function with arguments 5 and 6
+-------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to create and use lambda functions
+# for multiplication and square of a number.
+
+s = lambda r, z: r * z  # Lambda function to multiply two numbers
+print(s(4, 3))           # Call with 4 and 3
+
+z = lambda r: r * r      # Lambda function to calculate square
+print(z(5))               # Call with 5
+------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to sort a list of strings based on their length
+# using a lambda function as the key.
+
+names = ["Ramesh", "Bhavik", "Jayesh"]  # List of names
+
+names.sort(key=lambda x: len(x))        # Sort by length of each name
+print(names)                            # Display sorted list
+-----------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to use map() with a lambda function
+# to square all numbers in a list.
+
+numbers = [1, 2, 3, 4]                          # Original list
+
+squared = list(map(lambda x: x**2, numbers))    # Square each element using map and lambda
+print(squared)                                  # Display squared numbers
+-------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to use filter() with a lambda function
+# to get all even numbers from a list.
+
+numbers = [10, 15, 20, 25, 30]               # Original list
+
+even = list(filter(lambda x: x % 2 == 0, numbers))  # Filter even numbers using lambda
+print(even)                                   # Display even numbers
+-------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to use reduce() with a lambda function
+# to calculate the sum of all elements in a list.
+
+from functools import reduce   # Import reduce function
+
+numbers = [1, 2, 3, 4]  
+sum_all = reduce(lambda x, y: x + y, numbers)  # Sum all elements using reduce and lambda
+print(sum_all)  # Display the result
+----------------------------------------------------------------------------------------------------------------------
+MODULES
+--------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to import the math module
+# and demonstrate its usage in future calculations.
+
+import math  
+#The math module provides mathematical functions like sqrt, sin, cos, etc.
+--------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to calculate the factorial of a number
+# using the math module.
+
+math.factorial(3)
+# Comment:
+# This program demonstrates:
+# - Using math.factorial() to compute the factorial of a number
+# - Importing the math module to access built-in mathematical functions
+-------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to calculate the square root of a number
+# using the math module.
+
+import math
+
+w = math.sqrt(6)  # Calculate the square root of 6
+w                 # Display the result
+----------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to access the value of pi
+# using the math module.
+
+import math
+
+s = math.pi  # Access the value of pi
+s           # Display pi
+-----------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to define a function with two parameters
+# and print both values.
+
+def name(s, t):
+    print("what is your age", s)  # Print first parameter
+    print("what is your age", t)  # Print second parameter
+
+# Function call with two arguments
+name("bhavik", "arvind")
+------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to import a custom module
+# and call a function defined inside that module.
+
+import maninagar  # Import the custom Python file maninagar.py
+
+# Call the 'name' function from the imported module
+maninagar.name("zero", "hero")
+----------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to demonstrate importing a custom module
+# and calling its function in separate steps (cells).
+
+import maninagar    # Step 1: Import the module
+-------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to call a function from a previously imported custom module
+# with different arguments.
+
+import maninagar  # Ensure the module is imported
+
+maninagar.name("guys", "bro")  # Call the function with new arguments
+---------------------------------------------------------------------------------------------------------------
+Datetime Module
+-----------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to import the datetime module.
+
+import datetime  # Import the datetime module from Python standard library
+
+# Comment:
+# This program demonstrates:
+# - How to import a built-in Python module
+# - The datetime module provides classes for manipulating dates and times
+# - Once imported, you can use datetime.datetime, datetime.date, datetime.time, etc.
+----------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to get the current date and time
+# using the datetime module.
+
+import datetime
+
+e = datetime.datetime.now()  # Get current date and time (year, month, day, hour, minute, second, microsecond)
+print(e)                     # Display the current date and time
+---------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to get the current date and time
+# using the today() method of the datetime module.
+
+import datetime
+
+s = datetime.datetime.today()  # Get current date and time using today()
+print(s)                       # Display the current date and time
+---------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to extract the day, month, and year
+# from the current date using the datetime module.
+
+import datetime
+
+s = datetime.datetime.today()  # Get current date and time
+
+print(s.day)    # Print the day of the month
+print(s.month)  # Print the month
+print(s.year)   # Print the year
+-------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to create a specific date using datetime.date
+# and extract the year and the weekday name.
+
+import datetime
+
+s = datetime.date(2018, 10, 10)  # Create a date object (year, month, day)
+print("year :", s.year)           # Print the year
+print(s.strftime("%A"))           # Print the weekday name (%A gives full weekday)
+--------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to import only the datetime class
+# from the datetime module.
+
+from datetime import datetime  # Import datetime class directly
+-----------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to convert a date-time string into a datetime object.
+
+from datetime import datetime
+
+d = "2024-03-17 15:30"                    # Date-time as a string
+s = datetime.strptime(d, "%Y-%m-%d %H:%M")  # Convert string to datetime object
+print(s)                                   # Display the datetime object
+--------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to convert a datetime object into a formatted string.
+
+from datetime import datetime
+
+d = datetime.now()                     # Get the current datetime object
+s = d.strftime("%Y-%m-%d %I:%H %p")   # Convert datetime object to string with custom format
+print(s)                               # Display the formatted string
+---------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to import the time class from the datetime module.
+
+from datetime import time  # Import the time class directly
+---------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to create a time object
+# using the datetime.time class.
+
+from datetime import time
+
+t = time(15, 30, 15)  # Create a time object (hour=15, minute=30, second=15)
+print(t)               # Display the time object
+-----------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to import multiple classes (datetime, date, time)
+# from the datetime module in a single line.
+
+from datetime import datetime, date, time  # Import multiple classes directly
+------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to combine a date object and a time object
+# into a single datetime object.
+
+from datetime import datetime, date, time
+
+d = date(2025, 10, 10)        # Create a date object
+t = time(15, 30, 14)          # Create a time object
+
+dt = datetime.combine(d, t)   # Combine date and time into a datetime object
+print(dt)                      # Display the combined datetime
+-----------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to display the year, month, day,
+# and weekday name of a datetime object.
+
+from datetime import datetime
+
+s = datetime.today()  # Get current date and time
+
+print(s.year, "/", s.month, "/", s.day, "/", s.strftime("%A"))
+# %A: Represents the full weekday name (e.g., Monday, Tuesday)
+---------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to display the year, month, day,
+# and abbreviated weekday name of a datetime object.
+
+from datetime import datetime
+
+s = datetime.today()  # Get current date and time
+
+print(s.year, "/", s.month, "/", s.day, "/", s.strftime("%a"))
+# %a: Represents the abbreviated weekday name (e.g., Mon, Tue)
+------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to display the year, month name, and day
+# of a datetime object.
+
+from datetime import datetime
+
+s = datetime.today()  # Get current date and time
+
+print(s.year, "/", s.month, s.strftime("%B"), "/", s.day)
+# %B: Represents the full month name (e.g., January, February)
+-------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to display the year, abbreviated month name, and day
+# of a datetime object.
+
+from datetime import datetime
+
+s = datetime.today()  # Get current date and time
+
+print(s.year, "/", s.month, s.strftime("%b"), "/", s.day)
+# %b: Represents the abbreviated month name (e.g., Jan, Feb)
+---------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to display the current date in the format YY-MM-DD
+# using strftime().
+
+from datetime import datetime
+
+s = datetime.today()            # Get current date and time
+print(s.strftime("%y-%m-%d"))   # Format date as YY-MM-DD
+--------------------------------------------------------------------------------------------------------
+Random module
+-------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to import the random module.
+
+import random  # Import the random module
+-------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to generate a random float number
+# between 0.0 and 1.0 using the random module.
+
+import random
+
+s = random.random()  # Generate a random float in the range [0.0, 1.0)
+s                    # Display the random value
+------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to generate a random integer
+# between two specified values using random.randint().
+
+import random
+
+s = random.randint(1, 10)  # Generate a random integer from 1 to 10 (inclusive)
+s                           # Display the random integer
+--------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to generate a random integer
+# within a specified range using random.randrange().
+
+import random
+
+s = random.randrange(1, 10)  # Generate a random integer from 1 to 9 (10 not included)
+s                             # Display the random integer
+---------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to select multiple random elements from a list
+# using random.choices().
+
+import random
+
+h = ["reb", "blue", "dark", "yellow"]  # Original list
+h = random.choices(h, k=2)             # Select 2 random elements (with replacement)
+h                                       # Display selected elements
+----------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to select multiple random elements from a list
+# using random.choices() with custom weights.
+
+import random
+
+d = ["black", "white", "wast", "rose"]             # Original list
+d = random.choices(d, weights=[0, 1, 1, 1], k=3)   # Select 3 elements with weights
+d                                                  # Display selected elements
+------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to set a random seed
+# so that the random numbers generated are reproducible.
+
+import random
+
+random.seed(6)           # Set the seed for reproducibility
+print(random.random())   # Generate a random float (will always be the same with this seed)
+-------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to generate a random floating-point number
+# between two specified values using random.uniform().
+
+import random
+
+random.uniform(1, 10)  # Generate a random float between 1 and 10 (inclusive)
+-------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to select multiple unique elements from a list
+# using random.sample().
+
+import random
+
+names = ["Ramesh", "Bhavik", "Jayesh", "Suresh"]  # Original list
+selected = random.sample(names, 2)                # Select 2 unique elements
+print(selected)                                   # Display the selected elements
+
+------------------------------------------------------------------------------------------------------------------
+ERROR HANDLING
+---------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to continuously take names from the user,
+# store them in a list, and stop when the user types "stop",
+# using try-except-else-finally.
+
+s = []  # Empty list to store names
+
+while True:
+    try:
+        d = input("enter your name:(you can go exit write stop)")
+        if d.lower() == "stop":   # Stop condition
+            break
+        s.append(d)               # Add name to list
+        print(s)
+    except NameError:
+        print("name is not defined in double quotation")
+    else:
+        print("welcome to the list you can add another element")
+    finally:
+        print("Happy to join our team")
+
+# Comment:
+# This program demonstrates:
+# - Using an infinite while loop for continuous input
+# - Storing user input in a list
+# - Using 'stop' as a condition to exit the loop
+# - try-except-else-finally for error handling
+# - finally block always executes whether error occurs or not
+--------------------------------------------------------------------------------------------------------------------------
+FILE HANDLING
+---------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to create a new file
+# using file handling with mode "x".
+
+f = open("worker2.txt", "x")  # "x" mode creates a new file
+f.close()                    # Close the file
+print("file created successfully")
+------------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to write data into a file
+# using file handling with mode "w".
+
+f = open("worker2.txt", "w")   # "w" mode opens file for writing
+f.write("hi bro howz you \nwhat is your name")  # Write data to file
+f.close()                      # Close the file
+print("file wrote successfully")
+-------------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to append new data to an existing file
+# using file handling with mode "a".
+
+f = open("worker2.txt", "a")   # "a" mode opens file for appending
+f.write("\nmy name is bhavik") # Add new data in a new line
+f.close()                      # Close the file
+print("file added successfully")
+----------------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to read data from a file
+# using file handling with mode "r".
+
+f = open("worker2.txt", "r")   # "r" mode opens file for reading
+print(f.read(500))             # Read first 500 characters from file
+f.close()                      # Close the file
+--------------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to append and read data from a file
+# using file handling with mode "a+".
+
+f = open("worker2.txt", "a+")        # "a+" mode allows appending and reading
+f.write("\nhi my name is jayesh")    # Add data in a new line
+f.seek(0)                            # Move cursor to the beginning of the file
+print(f.read())                      # Read and display file data
+f.close()                            # Close the file
+---------------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to create a text file at a specific location
+# using an absolute file path.
+
+f = open("C:\\Users\\DELL\\Desktop\\tops.txt", "x")  # Create file using full path
+f.close()                                           # Close the file
+print("text file created successfully")
+------------------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to create a file using a raw string path,
+# write data into it, and then read the data.
+
+# r prefix makes the string a raw string,
+# so backslashes are treated as normal characters
+df = open(r"C:\Users\DELL\Desktop\tops1.txt", "w+")  # Create file and open for read & write
+df.write("hi bro")                                  # Write data to file
+df.seek(0)                                          # Move cursor to the beginning
+print(df.read())                                    # Read and display file data
+df.close()                                          # Close the file
+--------------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to write data to a file at a specific location
+# and then read the data using file handling.
+
+f = open("C:\\Users\\DELL\\Desktop\\tops.txt", "w+")  # Open file with full path in write & read mode
+f.write("welcome to the tops technology")             # Write data to file
+f.seek(0)                                             # Move cursor to the beginning
+print(f.read())                                       # Read and display file data
+f.close()                                             # Close the file
+print("Text file read and write successfully")
+----------------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to append new data to an existing file
+# using an absolute file path and then read the file.
+
+f = open("C:\\Users\\DELL\\Desktop\\tops.txt", "a+")   # Open file in append & read mode
+f.write("\nIn tops technology you choose data analytics.")  # Append data in new line
+f.seek(0)                                              # Move cursor to the beginning
+print(f.read())                                        # Read and display file content
+f.close()                                              # Close the file
+print("Text file more data add and read successfully")
+---------------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to append a list into a file
+# by converting the list into a string and then read the file.
+
+f = open("C:\\Users\\DELL\\Desktop\\tops.txt", "a+")   # Open file in append & read mode
+e = ["himanshi", "megha", "kandarp", "simit", "shreyansh", "bhavik"]
+
+f.write(str(e) + "\n")   # Convert list to string and append in new line
+f.seek(0)                # Move cursor to the beginning
+print(f.read())          # Read and display file content
+f.close()                # Close the file
+-------------------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to append and read data from a file
+# using the 'with' statement (context manager).
+
+with open("worker.txt", "a+") as f:   # 'as f' creates an alias for the file object
+    f.write("\nyou are so cute.")      # Append data to file
+    f.seek(0)                          # Move cursor to the beginning
+    print(f.read())                    # Read and display file content
+-------------------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to copy the contents of one file
+# (worker.txt) into another file (worker2.txt)
+# using the 'with' statement (context manager).
+
+with open("worker.txt") as a:              # Open source file in read mode
+    with open("worker2.txt", "w") as f:    # Open destination file in write mode
+        for i in a:                        # Read file line by line
+            f.write(i)                     # Write each line into new file
+        print("File copied successfully")  # Success message
+----------------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to check if a file exists,
+# and delete it if it exists using the 'os' module.
+
+import os
+
+# Check if the file exists at the given path
+if os.path.exists("C:\\Users\\DELL\\Desktop\\tops1.txt"):
+    os.remove("C:\\Users\\DELL\\Desktop\\tops1.txt")   # Delete the file
+    print("File deleted successfully.")                # Success message
+else:
+    print("File does not exist.")                      # File not found message
+-------------------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to append data to a file,
+# and read its content using the 'with' statement.
+# Demonstrate the use of file pointer methods: tell() and seek().
+
+with open("C:\\Users\\DELL\\Desktop\\tops.txt", "a+") as dfg:  
+    dfg.write("\n\nokk done")                # Append data to the file
+    print(dfg.tell())                         # tell() shows current pointer position after writing
+
+    dfg.seek(0)                               # Move cursor to the beginning of the file
+    print("2:", dfg.tell())                    # Pointer position after seek(0)
+    
+    print(dfg.read())                          # Read and display the file content
+    print("3:", dfg.tell())                    # Pointer position after reading
+-------------------------------------------------------------------------------------------------------------------------------------
+OOP CONCEPT
+------------------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to create a class 'student',
+# define an attribute, create an object, and access the attribute.
+
+# Define a class named 'student'
+class student:  
+    name = "bhavik"    # Class attribute
+
+# Create an object of the class
+s1 = student()        
+
+# Access and print the class attribute using the object
+print(s1.name)   
+---------------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to create a class 'student' with a constructor (__init__),
+# initialize attributes, create an object, and access its attributes.
+
+# Define a class named 'student'
+class student:                      
+    def __init__(self, name, age):      # __init__ is the constructor, called automatically
+        self.name = name                # self.name stores the name for this object
+        self.age = age                  # self.age stores the age for this object
+
+# Create an object of the class with specific attributes
+s1 = student("bhavik", 29)
+
+# Access and print the object's attributes
+print(s1.name, s1.age)
+----------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to create a class 'car' with class attributes and object attributes,
+# and demonstrate how object attributes can override class attributes.
+
+# Define a class named 'car'
+class car:
+    # Class attributes (shared by all objects)
+    name = "toyota"
+    color = "black"
+    
+    # Constructor to initialize object-specific attributes
+    def __init__(self, name, color):
+        self.name = name      # Object attribute (overrides class attribute)
+        self.color = color    # Object attribute (overrides class attribute)
+
+# Create an object of the class with specific values
+c1 = car("swift", "black")
+
+# Access and print the object's attributes
+print(c1.name, c1.color)
+------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to create a class 'student' with methods
+# to return the name and age of the student.
+
+# Define a class named 'student'
+class student:
+    def __init__(self, name, age):
+        self.name = name    # Object attribute: name
+        self.age = age      # Object attribute: age
+
+    def welcome(self):      # Method to return the name
+        return self.name
+
+    def getage(self):       # Method to return the age
+        return self.age
+
+# Create an object of the class
+s1 = student("bhavik", 29)
+
+# Call the methods and print the results
+print(s1.welcome())       # Prints the name
+print(s1.getage())        # Prints the age
+---------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to create a class 'student' with marks as a list,
+# and define a method to calculate and return the average marks.
+
+# Define a class named 'student'
+class student:
+    def __init__(self, name, marks):
+        self.name = name        # Object attribute: student's name
+        self.marks = marks      # Object attribute: list of marks
+
+    def get_avg(self):          # Instance method to calculate average
+        total = 0
+        for val in self.marks:
+            total += val
+        return self.name, total / len(self.marks)  # Return name and average marks
+
+# Create an object of the class with name and list of marks
+s1 = student("bhavik", [99, 98, 97])
+
+# Call the method and print the result
+print(s1.get_avg())            # Output: ('bhavik', 98.0)
+------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to create a class 'car' demonstrating abstraction.
+# Hide internal details and provide a method to start the car.
+
+# Define a class named 'car'
+class car:
+    def __init__(self):
+        # Internal attributes (hidden details)
+        self.acc = False    # Accelerator
+        self.cluch = False  # Clutch
+        self.brk = False    # Brake
+
+    def start(self):        # Method to start the car (abstraction)
+        self.acc = True     # Activate accelerator
+        self.cluch = True   # Activate clutch
+        return "car started"  # Only useful info is shown to user
+
+# Create an object of the class
+c1 = car()
+
+# Call the start method and print the result
+print(c1.start())          # Output: car started
+--------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to create a 'BankAccount' class demonstrating encapsulation.
+# Use private variables, getters, and methods to deposit and withdraw money.
+
+# Define a class named 'BankAccount'
+class BankAccount:
+    def __init__(self, account_number, balance):
+        self.__account_number = account_number   # Private variable (hidden)
+        self.__balance = balance                 # Private variable (hidden)
+
+    # Getter method to access balance
+    def get_balance(self):
+        return self.__balance
+
+    # Method to deposit money
+    def deposit(self, amount):
+        if amount > 0:
+            self.__balance += amount
+            print(f"{amount} deposited. New balance: {self.__balance}")
+        else:
+            print("Invalid deposit amount")
+
+    # Method to withdraw money
+    def withdraw(self, amount):
+        if 0 < amount <= self.__balance:
+            self.__balance -= amount
+            print(f"{amount} withdrawn. New balance: {self.__balance}")
+        else:
+            print("Insufficient balance or invalid amount")
+
+# Create an object of the class
+acc = BankAccount(12345, 5000)
+
+# Access balance using getter method
+print(acc.get_balance())  
+
+# Deposit money
+acc.deposit(2000)         
+
+# Withdraw money
+acc.withdraw(1000)         
+----------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to demonstrate single inheritance.
+# Use static methods in the parent class and access them from the child class.
+
+# Parent class
+class car:    
+    @staticmethod              # Static method works at class level, no need for object
+    def start():               # No 'self' parameter
+        print("car started")
+    
+    @staticmethod
+    def stop():
+        print("car stopped")
+
+# Child class inheriting from 'car'
+class toyota(car):
+    def __init__(self, name):
+        self.name = name      # Object attribute
+
+# Create an object of the child class
+c1 = toyota("bhavik")
+
+# Access object attribute
+print(c1.name)
+
+# Call inherited static method
+c1.start()                  # Prints: car started
+c1.stop()                   # Prints: car stopped
+--------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to create a class 'car',
+# create an object, access its attribute, and delete the object.
+
+# Define a class named 'car'
+class car:
+    def __init__(self, name):
+        self.name = name      # Object attribute
+
+# Create an object of the class
+c1 = car("swift")
+
+# Access and print the object's attribute
+print(c1.name)              # Output: swift
+
+# Delete the object
+del c1                      # Object c1 is deleted
+-------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to demonstrate multi-level inheritance.
+# Use static methods in the parent class and access them from the child and grandchild classes.
+
+# Parent class
+class car:
+    @staticmethod
+    def start():
+        print("car started")
+    
+    @staticmethod
+    def stop():
+        print("car stopped")
+
+# Child class inheriting from 'car'
+class swift(car):
+    def __init__(self, color, gear):
+        self.color = color
+        self.gear = gear       # Corrected: previously 'self.color = gear'
+
+# Grandchild class inheriting from 'swift'
+class toyota(swift):
+    def __init__(self, design, tyre):
+        self.design = design
+        self.tyre = tyre
+
+# Create an object of the grandchild class
+t1 = toyota("broda", 4)
+
+# Access grandchild object attributes
+print(t1.design, t1.tyre)   # Output: broda 4
+
+# Call inherited static method from parent class
+t1.start()                   # Output: car started
+----------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to demonstrate multiple inheritance in Python.
+# Create three classes where one class inherits from two parent classes.
+
+# Parent class A
+class a:
+    vara = "welcome to the a"   # Class attribute
+
+# Parent class B
+class b:
+    varb = "welcome to the b"   # Class attribute
+
+# Child class C inheriting from both A and B
+class c(a, b):
+    varc = "welcome to the c"   # Class attribute
+
+# Create an object of the child class
+c1 = c()
+
+# Access attributes from child and parent classes
+print(c1.varc)   # From child class C
+print(c1.varb)   # From parent class B
+print(c1.vara)   # From parent class A
+-------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to demonstrate private attributes in a class.
+# Access the private attribute through a class method.
+
+# Define a class named 'account'
+class account:
+    def __init__(self, aacno, accpass):
+        self.aacno = aacno                # Public attribute
+        self.__accpass = accpass          # Private attribute (cannot be accessed outside)
+
+    # Method to access the private attribute
+    def showpass(self):
+        print(self.__accpass)
+
+# Create an object of the class
+a1 = account(12345, 4567)
+
+# Access public attribute
+print(a1.aacno)            # Output: 12345
+
+# Access private attribute through method
+a1.showpass()              # Output: 4567
+
+#  Note: Do NOT do print(a1.showpass()) as showpass() already prints value
+# Using print() will display: 4567 \n None
+        
+---------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to demonstrate the use of the super() method.
+# Create a parent class 'car' and a child class 'toyota'.
+# Access parent class attributes from the child class using super().
+
+# Parent class
+class car:
+    def __init__(self, type):
+        self.type = type      # Parent class attribute
+    
+    @staticmethod
+    def start():              # Static method
+        print("car start")
+    
+    def stop():               # Instance method (note: missing self in original code)
+        print("car stop")
+
+# Child class inheriting from 'car'
+class toyota(car):
+    def __init__(self, color, type):
+        super().__init__(type)   # Call parent class constructor using super()
+        self.color = color       # Child class attribute
+
+# Create an object of the child class
+t1 = toyota("black", "electric")
+
+# Access attributes from parent and child class
+print(t1.type)     # Output: electric (from parent class)
+print(t1.color)    # Output: black (from child class)
+----------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to demonstrate a class method.
+# Class method is bound to the class, not the object, and can modify class attributes.
+
+class student:
+    name = "jayesh"   # Class attribute
+
+    @classmethod
+    def set_name(cls, new_name):  # Class method receives class as first parameter (cls)
+        cls.name = new_name        # Modify class attribute
+
+# Call class method using the class
+student.set_name("bhavik")
+
+# Access class attribute via class
+print(student.name)  # Output: bhavik
+
+# Access class attribute via object
+s1 = student()
+print(s1.name)       # Output: bhavik
+-----------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to demonstrate the use of @property in a class.
+# Property allows controlled access to private data members and encapsulation.
+
+class student:
+    def __init__(self, phy, chem, math):
+        self.phy = phy       # Physics marks
+        self.chem = chem     # Chemistry marks
+        self.math = math     # Math marks
+
+    @property
+    def percantage(self):    # Property to calculate average marks
+        return str((self.phy + self.chem + self.math) / 3) + "%"
+
+# Create an object of the class
+s1 = student(99, 98, 97)
+
+# Access and modify attributes
+print(s1.phy)               # Output: 99
+s1.phy = 86                 # Modify physics marks
+print(s1.phy)               # Output: 86
+
+# Access calculated property
+print(s1.percantage)        # Output: 93.66666666666667%
+---------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to demonstrate polymorphism using a class 'complex'.
+# Polymorphism allows using the same operation in different ways (here: adding complex numbers).
+
+class complex:
+    def __init__(self, real, img):
+        self.real = real    # Real part
+        self.img = img      # Imaginary part
+
+    def shownumbers(self):  # Method to display complex number
+        print(self.real, "i +", self.img, "j +")
+
+    def add(self, c2):     # Method to add two complex numbers
+        newreal = self.real + c2.real
+        newimg = self.img + c2.img
+        return complex(newreal, newimg)
+
+# Create objects of the class
+c1 = complex(3, 5)
+c1.shownumbers()          # Output: 3 i + 5 j +
+
+c2 = complex(4, 5)
+c2.shownumbers()          # Output: 4 i + 5 j +
+
+# Add two complex numbers using 'add' method
+c3 = c1.add(c2)
+c3.shownumbers()          # Output: 7 i + 10 j +
+-------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

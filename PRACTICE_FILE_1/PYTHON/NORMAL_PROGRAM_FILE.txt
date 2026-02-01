@@ -1,0 +1,37 @@
+# Question:
+# Write a Python program to print "hello" and "hi" on the screen.
+
+print ("hello")
+print ("hi")
+
+# Comment:
+# This program uses the print() function to display text on the console. 
+# First it prints "hello", then it prints "hi".
+-------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to print multi-line messages using triple quotes.
+
+print(""" hi bro
+hows you
+are you f9""")
+print ("""hi bro 
+are you comming with me """)
+
+# Comment:
+# This program demonstrates printing multi-line strings using triple quotes (""").
+# Each print() outputs the text exactly as written, preserving line breaks.
+-------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to display the memory addresses (IDs) of variables a, b, and c.
+
+a=7 
+b=14
+c=13
+print ("id a :",id(a))
+print ("id b :",id(b))
+print ("id c :",id(c))
+
+# Comment:
+# The id() function returns the unique memory address of an object in Python.
+# Here, we print the IDs of variables a, b, and c.
+# The comment "#garbagecollector" indicates that Python's memory management handles these objects automatically.

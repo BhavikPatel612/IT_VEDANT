@@ -1,0 +1,615 @@
+LIST 
+-----------------------------------------------------------------------------------------------------------------------------------
+e="python","sql",8,58  # do not modify data in tuple.
+e
+----------------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to create a list containing different data types and display it
+
+r = ["world","mysql",1234,True,12.5]  # Creating a list with strings, integer, boolean, and float
+r
+
+----------------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to display the data type of a variable containing a list.
+
+print(type(r))
+ # Displays the type of variable r
+-------------------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to iterate through all elements of a list using a for loop.
+
+for h in r:
+    print(h)  # Prints each element of the list
+------------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to demonstrate slicing of a list with step values.
+
+r = ["world", "mysql", 1234, True, 12.5]
+
+print(r[0::2])   # Slicing from index 0, every 2nd element
+print(r)         # Displaying the original list
+print(r[::2])    # Slicing with default start index 0, every 2nd element
+--------------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to demonstrate adding elements to a list using append(), insert(), and extend() methods.
+
+d.append("excell")     # Adds a single element at the end
+print(d)
+d.insert(1,777)    # Inserts 777 at index 1
+print(d)
+r=[34,"quality"]
+d.extend(r)          # Adds multiple elements at the end
+print(d)
+-------------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to replace an element in a list using indexing.
+
+d[-1]="teblue"   # Replacing the last element ('quality') with 'teblue'
+d
+-----------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to replace multiple elements in a list using slicing.
+
+d[0:3]= ["python"]   # Replacing the first three elements with a single element "python"
+d
+------------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to remove and return the last element of a list using the pop() method.
+d=["hello",123,True,12.2]
+d
+print(d)  # Display the original list
+print(d.pop())  # Removes and returns the last element
+print(d)          # Display the list after popping
+-----------------------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to remove and return an element at a specific index in a list using pop().
+
+d = ["python", "hello", "excell", 34, "teblue"]  # Example list
+
+print(d)          # Display the original list
+print(d.pop(1))   # Removes and returns the element at index 1 ("hello")
+print(d)          # Display the list after popping
+-------------------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to take multiple inputs for IDs and names, store them in separate lists, and display them.
+
+rt = []  # List to store names
+idd = []  # List to store IDs
+for j in range(1,6):
+    id3 = int(input("Enter ur ids : ")) 
+    rt3 = input("enter ur name :")
+    idd.append(id3) 
+    rt.append(rt3)
+for i in range(5):
+    print("ID:", idd[i], " Name:", rt[i],end=" ")
+
+# Comment:
+# This program demonstrates:
+# - Using lists to store multiple values of the same type (IDs and names separately).
+# - Using a for loop to take multiple inputs from the user.
+# - Using a second loop to access and print elements from both lists.
+# - Lists maintain the order of elements, so the ith ID corresponds to the ith name.
+--------------------------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to create a copy of a list and demonstrate that changes in the copy do not affect the original list.
+m = ["mother", 123, 12.4, True]  # Original list
+
+r = m.copy()        # Creating a shallow copy of the list
+print(r)            # Displaying the copied list
+
+r[1] = "brother"    # Modifying the copy
+print(r)            # Displaying the modified copy
+print(m)            # Displaying the original list to show it remains unchanged
+-------------------------------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to demonstrate sorting a list and explain why sorting fails with mixed data types.
+
+f = ["srd", 123, 12.3, "hello", True]
+print(f)   # Original list
+
+s = f.sort()  # Attempting to sort the list
+print(s)      # sort() returns None
+print(f)      # Original list after attempting to sort
+---------------------------------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to sort a list of numbers and explain how sort() works.
+
+# Program:
+f = [123, 456, 789]
+print(f)       # Original list
+
+s = f.sort()   # sort() sorts the list in-place and returns None
+print(s)       # Prints None because sort() does not return the sorted list
+print(f)       # The original list is now sorted
+---------------------------------------------------------------------------------------------------------------------------------------------
+Tuples method
+---------------------------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to demonstrate the use of indexing in a tuple
+# and find the index position of a given element.
+
+d=("hi","bro","bro","123") #indexing tupple ke andar
+d.index("hi")
+# Tuple with multiple elements
+--------------------------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to count how many times a specific element
+# appears in a tuple using the count() method.
+
+d.count("bro")
+
+# Comment:
+# This program demonstrates:
+# - Creating a tuple
+# - Using the count() method with a tuple
+# - Counting how many times a specific value appears in the tuple
+# - count() returns the total number of occurrences of the given element
+-------------------------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to demonstrate how to modify a tuple
+# using an indirect method by converting it into a list.
+
+f = ("bhavik", 123, 23.4, True, "yes")
+print(f)  # Original tuple (tuple elements cannot be changed directly)
+
+r = list(f)      # Convert tuple into list
+r[1] = "arvind"  # Modify element using list indexing
+
+f = tuple(r)     # Convert list back into tuple
+print(f)
+
+# Comment:
+# This program demonstrates:
+# - Tuples are immutable (cannot be modified directly)
+# - Converting a tuple into a list to modify elements
+# - Using indexing to replace an element in the list
+# - Converting the list back into a tuple
+# - This is called an indirect method of modifying a tuple
+------------------------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to demonstrate packing and unpacking
+# of elements using both tuple and list.
+
+# Tuple unpacking
+f, s, d = ("dish", "bhavik", "hello")
+print(f)
+print(s)
+print(d)
+
+print()
+
+# List unpacking
+g, h, i = ["hi", "bro", "welcome"]
+print(g)
+print(h)
+print(i)
+
+# Comment:
+# This program demonstrates:
+# - Packing values into a tuple and a list
+# - Unpacking tuple elements into separate variables
+# - Unpacking list elements into separate variables
+# - Packing and unpacking works the same way for both lists and tuples
+-------------------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to take user input for name and age
+# and display the output using string formatting.
+
+name = input("Enter your name here: ")
+age = int(input("Enter your age here: "))
+
+e = ("My name is {0} and my age is {1}.")
+print(e.format(name, age))
+
+# Comment:
+# This program demonstrates:
+# - Taking user input using input()
+# - Type casting input from string to integer
+# - Using string format() method
+# - Replacing placeholders with user-provided values
+------------------------------------------------------------------------------------------------------------------------------------
+SET{} METHOD
+--------------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to store multiple values in a set
+# and display its elements using a for loop.
+
+sett = {"hibro", 123, 23.4, True}  # Set with different data types
+print(sett)
+
+for h in sett:
+    print(h)
+
+# Comment:
+# This program demonstrates:
+# - Creating a set with multiple values
+# - Sets store unique and unordered elements
+# - Using a for loop to iterate through a set
+# - Printing each element of the set
+---------------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to demonstrate set operations
+# such as printing a set, checking its length, and removing elements using pop().
+
+print(sett)            # Print the set
+print(len(sett))       # Check length before removing an element
+print(sett.pop())      # Remove and return a random element (no fixed index)
+print(sett)            # Print set after removal
+print(len(sett))       # Check length after removal
+
+# Comment:
+# This program demonstrates:
+# - Printing a set
+# - Using len() to find the number of elements in a set
+# - Using pop() method in a set
+# - pop() removes a random element because sets are unordered
+# - Checking the updated set and its length after removal
+----------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to demonstrate how to update a set
+# by adding elements from another set using the update() method.
+
+r = {"hi", True, 123, 12.3}   # Initial set
+print("r:", r)
+
+s = {"hello", 345}           # Second set
+print("s:", s)
+
+r.update(s)                  # Update r by adding elements of s
+print("print r (s ko r ke andar update kiya):", r)
+
+# Comment:
+# This program demonstrates:
+# - Creating sets with multiple values
+# - Using update() method to add elements from another set
+# - update() adds all elements and ignores duplicates
+# - Sets store only unique elements
+-------------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to demonstrate how to merge two sets
+# using the union() method.
+
+f = r.union(s)   # Merge both sets into a new set
+f
+
+# Comment:
+# This program demonstrates:
+# - Using union() method with sets
+# - Merging elements of two sets into a new set
+# - union() returns a new set and does not modify the original sets
+# - Duplicate values are automatically removed
+------------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to find common elements
+# between two sets using the intersection() method.
+
+r = {"hi", "hello", 123, 12.2}   # First set
+f = {"hi", "hello", 34, 56.7}    # Second set
+
+r.intersection(f)
+
+# Comment:
+# This program demonstrates:
+# - Creating two sets
+# - Using intersection() method with sets
+# - intersection() returns only common elements from both sets
+# - The original sets remain unchanged
+----------------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to demonstrate the use of
+# intersection_update() method with sets.
+
+d = r.intersection_update(f)   # Updates r with common elements
+print(r)
+
+v = f.intersection_update(r)   # Updates f with common elements
+print(f)
+
+# Comment:
+# This program demonstrates:
+# - Using intersection_update() method with sets
+# - intersection_update() modifies the original set
+# - Only common elements are kept in the set
+# - The method returns None
+----------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to find the difference between two sets
+# using the difference() method.
+
+g = {"hello", "hi", 123, 23.4, True}
+h = {"hello", "hi", 567, 12.3}
+
+print(g.difference(h))  # Elements present in g but not in h
+print(h.difference(g))  # Elements present in h but not in g
+
+# Comment:
+# This program demonstrates:
+# - Creating two sets
+# - Using difference() method with sets
+# - difference() returns elements that are not common
+# - Order of elements in sets is not fixed
+-------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to demonstrate difference_update() method with sets,
+# which updates the original set by removing elements found in another set.
+
+g = {"hello", "hi", 123, 23.4, True}
+h = {"hello", "hi", 567, 12.3}
+
+print(g.difference_update(h))  # Removes elements of h from g (updates g)
+print(g)                        # Updated g
+
+print(h.difference_update(g))  # Removes elements of g from h (updates h)
+print(h)                        # Updated h
+
+# Comment:
+# This program demonstrates:
+# - Using difference_update() method with sets
+# - difference_update() modifies the original set directly
+# - Only elements not in the other set are kept
+# - The method returns None
+----------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to demonstrate removing elements from a set
+# using remove() and pop() methods.
+
+g.remove(True)  # Remove a specific element from the set
+print(g)
+
+h.pop()         # Remove a random element from the set (no indexing in sets)
+print(h)
+
+# Comment:
+# This program demonstrates:
+# - Using remove() to delete a specific element from a set
+# - Using pop() to remove and return an arbitrary element
+# - Sets are unordered, so pop() removes a random element
+# - Trying to remove a non-existing element with remove() will raise an error
+----------------------------------------------------------------------------------------------------------------------
+DICTIONARY
+--------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to create and display a dictionary
+# with keys and their corresponding values.
+
+si = {
+    "id": 123,
+    "name": "bhavik"
+}
+si  # Display the dictionary
+
+# Comment:
+# This program demonstrates:
+# - Creating a dictionary with key-value pairs
+# - Accessing or displaying the entire dictionary
+# - Dictionaries store data in key-value format
+--------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to find the number of key-value pairs in a dictionary.
+
+si = {
+    "id": 123,
+    "name": "bhavik"
+}
+
+len(si)  # Returns the number of items in the dictionary
+
+# Comment:
+# This program demonstrates:
+# - Using len() to get the number of key-value pairs in a dictionary
+# - Dictionaries store data in key-value pairs
+# - len() counts how many keys are present in the dictionary
+---------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to add a new key-value pair to a dictionary.
+
+si["c_name"]="n.b.patel"
+si
+# Comment:
+# This program demonstrates:
+# - Adding a new key-value pair to a dictionary
+# - Using dictionary[key] = value syntax to update or add data
+# - Displaying the updated dictionary to confirm the addition
+------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to update a dictionary with another dictionary using the update() method.
+
+si = {
+    "id": 123,
+    "name": "bhavik",
+    "c_name": "n.b.patel"
+}
+
+si.update({"clgname": "topsinstitute"})  # Add/update key-value pairs using update()
+si  # Display updated dictionary
+
+# Comment:
+# This program demonstrates:
+# - Using update() to add new key-value pairs to a dictionary
+# - update() can also modify existing keys if the key already exists
+# - Displaying the dictionary after the update
+---------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to create a dictionary where each key maps to a list of values.
+
+d = {
+    "name": ["bhavik", "jay", "yash"],
+    "age": [25, 23, 24],
+    "sex": ["male", "female", "male"]
+}
+
+d  # Display the dictionary
+
+# Comment:
+# This program demonstrates:
+# - Creating a dictionary with lists as values
+# - Each key can hold multiple related values
+# - Accessing the dictionary will show all keys and their corresponding lists
+------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to get all the values from a dictionary.
+
+d = {
+    "name": ["bhavik", "jay", "yash"],
+    "age": [25, 23, 24],
+    "sex": ["male", "female", "male"]
+}
+
+d.values()  # Returns all values in the dictionary as a view object
+
+# Comment:
+# This program demonstrates:
+# - Using the values() method to access all dictionary values
+# - The returned object is a view, not a list
+# - Useful for iterating over all values in a dictionary
+----------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to get all the keys from a dictionary.
+
+d = {
+    "name": ["bhavik", "jay", "yash"],
+    "age": [25, 23, 24],
+    "sex": ["male", "female", "male"]
+}
+
+d.keys()  # Returns all keys in the dictionary as a view object
+
+# Comment:
+# This program demonstrates:
+# - Using the keys() method to access all dictionary keys
+# - The returned object is a view, not a list
+# - Useful for iterating over all keys in a dictionary
+----------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to get all key-value pairs from a dictionary.
+
+d = {
+    "name": ["bhavik", "jay", "yash"],
+    "age": [25, 23, 24],
+    "sex": ["male", "female", "male"]
+}
+
+d.items()  # Returns all key-value pairs as a view object
+
+# Comment:
+# This program demonstrates:
+# - Using the items() method to access all key-value pairs in a dictionary
+# - The returned object is a view, not a list
+# - Useful for iterating over keys and their corresponding values
+-------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to iterate over all values in a dictionary and print them.
+
+d = {
+    "name": ["bhavik", "jay", "yash"],
+    "age": [25, 23, 24],
+    "sex": ["male", "female", "male"]
+}
+
+for h in d.values():
+    print(h)  # Print each value (which are lists in this case)
+
+# Comment:
+# This program demonstrates:
+# - Using values() to access all dictionary values
+# - Iterating over the values using a for loop
+# - Printing each value separately
+---------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to iterate over all keys in a dictionary and print them.
+
+d = {
+    "name": ["bhavik", "jay", "yash"],
+    "age": [25, 23, 24],
+    "sex": ["male", "female", "male"]
+}
+
+for h in d.keys():
+    print(h)  # Print each key in the dictionary
+
+# Comment:
+# This program demonstrates:
+# - Using keys() to access all dictionary keys
+# - Iterating over the keys using a for loop
+# - Printing each key separately
+-------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to iterate over all key-value pairs in a dictionary and print them.
+
+d = {
+    "name": ["bhavik", "jay", "yash"],
+    "age": [25, 23, 24],
+    "sex": ["male", "female", "male"]
+}
+
+for h in d.items():
+    print(h)  # Print each key-value pair as a tuple
+
+# Comment:
+# This program demonstrates:
+# - Using items() to access all key-value pairs in a dictionary
+# - Iterating over key-value pairs using a for loop
+# - Each iteration returns a tuple (key, value)
+----------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to combine two sets using the zip() function
+# and iterate over the paired elements.
+
+r = {1, 2, 3, 4, 5}
+z = {"yash", "raj", "bhavik", "ramesh", "jinal"}
+
+for h in zip(r, z):
+    print(h)  # Print each pair as a tuple
+
+# Comment:
+# This program demonstrates:
+# - Using zip() to combine elements from two sets
+# - Each iteration returns a tuple containing one element from each set
+# - Sets are unordered, so the pairing may not follow the original insertion order
+-----------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to remove the last inserted key-value pair from a dictionary
+# using the popitem() method.
+
+d = {
+    "name": ["bhavik", "jay", "yash"],
+    "age": [25, 23, 24],
+    "sex": ["male", "female", "male"]
+}
+
+print(d.popitem())  # Removes and returns the last inserted key-value pair
+print(d)            # Display dictionary after removal
+
+# Comment:
+# This program demonstrates:
+# - Using popitem() to remove the last inserted key-value pair
+# - The method returns the removed pair as a tuple (key, value)
+# - Dictionaries maintain insertion order (Python 3.7+)
+# - The original dictionary is modified
+----------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to take multiple user inputs in comma-separated format,
+# store them as lists inside another list, and display each user's details.
+
+f = []  # List to store all user details
+
+for i in range(5):
+    data = input("Enter your details separated by comma (name,address,city,state): ")
+    s = data.split(",")  # Split input string into a list
+    f.append(s)          # Append the list to the main list
+
+# Display each user's details
+print("user details 1:", f[0])
+print("user details 2:", f[1])
+print("user details 3:", f[2])
+print("user details 4:", f[3])
+print("user details 5:", f[4])
+
+# Comment:
+# This program demonstrates:
+# - Taking multiple comma-separated inputs from the user
+# - Using split() to convert input string into a list
+# - Storing each user's details as a sublist in a main list
+# - Accessing and printing each sublist using indexing
+# - Maintaining order of entry for easy reference

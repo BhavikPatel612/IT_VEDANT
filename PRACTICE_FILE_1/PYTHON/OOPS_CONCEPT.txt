@@ -1,0 +1,401 @@
+-------------------------------------------------------------------------------------------------------------------------------------
+OOP CONCEPT
+------------------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to create a class 'student',
+# define an attribute, create an object, and access the attribute.
+
+# Define a class named 'student'
+class student:  
+    name = "bhavik"    # Class attribute
+
+# Create an object of the class
+s1 = student()        
+
+# Access and print the class attribute using the object
+print(s1.name)   
+---------------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to create a class 'student' with a constructor (__init__),
+# initialize attributes, create an object, and access its attributes.
+
+# Define a class named 'student'
+class student:                      
+    def __init__(self, name, age):      # __init__ is the constructor, called automatically
+        self.name = name                # self.name stores the name for this object
+        self.age = age                  # self.age stores the age for this object
+
+# Create an object of the class with specific attributes
+s1 = student("bhavik", 29)
+
+# Access and print the object's attributes
+print(s1.name, s1.age)
+----------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to create a class 'car' with class attributes and object attributes,
+# and demonstrate how object attributes can override class attributes.
+
+# Define a class named 'car'
+class car:
+    # Class attributes (shared by all objects)
+    name = "toyota"
+    color = "black"
+    
+    # Constructor to initialize object-specific attributes
+    def __init__(self, name, color):
+        self.name = name      # Object attribute (overrides class attribute)
+        self.color = color    # Object attribute (overrides class attribute)
+
+# Create an object of the class with specific values
+c1 = car("swift", "black")
+
+# Access and print the object's attributes
+print(c1.name, c1.color)
+------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to create a class 'student' with methods
+# to return the name and age of the student.
+
+# Define a class named 'student'
+class student:
+    def __init__(self, name, age):
+        self.name = name    # Object attribute: name
+        self.age = age      # Object attribute: age
+
+    def welcome(self):      # Method to return the name
+        return self.name
+
+    def getage(self):       # Method to return the age
+        return self.age
+
+# Create an object of the class
+s1 = student("bhavik", 29)
+
+# Call the methods and print the results
+print(s1.welcome())       # Prints the name
+print(s1.getage())        # Prints the age
+---------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to create a class 'student' with marks as a list,
+# and define a method to calculate and return the average marks.
+
+# Define a class named 'student'
+class student:
+    def __init__(self, name, marks):
+        self.name = name        # Object attribute: student's name
+        self.marks = marks      # Object attribute: list of marks
+
+    def get_avg(self):          # Instance method to calculate average
+        total = 0
+        for val in self.marks:
+            total += val
+        return self.name, total / len(self.marks)  # Return name and average marks
+
+# Create an object of the class with name and list of marks
+s1 = student("bhavik", [99, 98, 97])
+
+# Call the method and print the result
+print(s1.get_avg())            # Output: ('bhavik', 98.0)
+------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to create a class 'car' demonstrating abstraction.
+# Hide internal details and provide a method to start the car.
+
+# Define a class named 'car'
+class car:
+    def __init__(self):
+        # Internal attributes (hidden details)
+        self.acc = False    # Accelerator
+        self.cluch = False  # Clutch
+        self.brk = False    # Brake
+
+    def start(self):        # Method to start the car (abstraction)
+        self.acc = True     # Activate accelerator
+        self.cluch = True   # Activate clutch
+        return "car started"  # Only useful info is shown to user
+
+# Create an object of the class
+c1 = car()
+
+# Call the start method and print the result
+print(c1.start())          # Output: car started
+--------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to create a 'BankAccount' class demonstrating encapsulation.
+# Use private variables, getters, and methods to deposit and withdraw money.
+
+# Define a class named 'BankAccount'
+class BankAccount:
+    def __init__(self, account_number, balance):
+        self.__account_number = account_number   # Private variable (hidden)
+        self.__balance = balance                 # Private variable (hidden)
+
+    # Getter method to access balance
+    def get_balance(self):
+        return self.__balance
+
+    # Method to deposit money
+    def deposit(self, amount):
+        if amount > 0:
+            self.__balance += amount
+            print(f"{amount} deposited. New balance: {self.__balance}")
+        else:
+            print("Invalid deposit amount")
+
+    # Method to withdraw money
+    def withdraw(self, amount):
+        if 0 < amount <= self.__balance:
+            self.__balance -= amount
+            print(f"{amount} withdrawn. New balance: {self.__balance}")
+        else:
+            print("Insufficient balance or invalid amount")
+
+# Create an object of the class
+acc = BankAccount(12345, 5000)
+
+# Access balance using getter method
+print(acc.get_balance())  
+
+# Deposit money
+acc.deposit(2000)         
+
+# Withdraw money
+acc.withdraw(1000)         
+----------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to demonstrate single inheritance.
+# Use static methods in the parent class and access them from the child class.
+
+# Parent class
+class car:    
+    @staticmethod              # Static method works at class level, no need for object
+    def start():               # No 'self' parameter
+        print("car started")
+    
+    @staticmethod
+    def stop():
+        print("car stopped")
+
+# Child class inheriting from 'car'
+class toyota(car):
+    def __init__(self, name):
+        self.name = name      # Object attribute
+
+# Create an object of the child class
+c1 = toyota("bhavik")
+
+# Access object attribute
+print(c1.name)
+
+# Call inherited static method
+c1.start()                  # Prints: car started
+c1.stop()                   # Prints: car stopped
+--------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to create a class 'car',
+# create an object, access its attribute, and delete the object.
+
+# Define a class named 'car'
+class car:
+    def __init__(self, name):
+        self.name = name      # Object attribute
+
+# Create an object of the class
+c1 = car("swift")
+
+# Access and print the object's attribute
+print(c1.name)              # Output: swift
+
+# Delete the object
+del c1                      # Object c1 is deleted
+-------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to demonstrate multi-level inheritance.
+# Use static methods in the parent class and access them from the child and grandchild classes.
+
+# Parent class
+class car:
+    @staticmethod
+    def start():
+        print("car started")
+    
+    @staticmethod
+    def stop():
+        print("car stopped")
+
+# Child class inheriting from 'car'
+class swift(car):
+    def __init__(self, color, gear):
+        self.color = color
+        self.gear = gear       # Corrected: previously 'self.color = gear'
+
+# Grandchild class inheriting from 'swift'
+class toyota(swift):
+    def __init__(self, design, tyre):
+        self.design = design
+        self.tyre = tyre
+
+# Create an object of the grandchild class
+t1 = toyota("broda", 4)
+
+# Access grandchild object attributes
+print(t1.design, t1.tyre)   # Output: broda 4
+
+# Call inherited static method from parent class
+t1.start()                   # Output: car started
+----------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to demonstrate multiple inheritance in Python.
+# Create three classes where one class inherits from two parent classes.
+
+# Parent class A
+class a:
+    vara = "welcome to the a"   # Class attribute
+
+# Parent class B
+class b:
+    varb = "welcome to the b"   # Class attribute
+
+# Child class C inheriting from both A and B
+class c(a, b):
+    varc = "welcome to the c"   # Class attribute
+
+# Create an object of the child class
+c1 = c()
+
+# Access attributes from child and parent classes
+print(c1.varc)   # From child class C
+print(c1.varb)   # From parent class B
+print(c1.vara)   # From parent class A
+-------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to demonstrate private attributes in a class.
+# Access the private attribute through a class method.
+
+# Define a class named 'account'
+class account:
+    def __init__(self, aacno, accpass):
+        self.aacno = aacno                # Public attribute
+        self.__accpass = accpass          # Private attribute (cannot be accessed outside)
+
+    # Method to access the private attribute
+    def showpass(self):
+        print(self.__accpass)
+
+# Create an object of the class
+a1 = account(12345, 4567)
+
+# Access public attribute
+print(a1.aacno)            # Output: 12345
+
+# Access private attribute through method
+a1.showpass()              # Output: 4567
+
+#  Note: Do NOT do print(a1.showpass()) as showpass() already prints value
+# Using print() will display: 4567 \n None
+        
+---------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to demonstrate the use of the super() method.
+# Create a parent class 'car' and a child class 'toyota'.
+# Access parent class attributes from the child class using super().
+
+# Parent class
+class car:
+    def __init__(self, type):
+        self.type = type      # Parent class attribute
+    
+    @staticmethod
+    def start():              # Static method
+        print("car start")
+    
+    def stop():               # Instance method (note: missing self in original code)
+        print("car stop")
+
+# Child class inheriting from 'car'
+class toyota(car):
+    def __init__(self, color, type):
+        super().__init__(type)   # Call parent class constructor using super()
+        self.color = color       # Child class attribute
+
+# Create an object of the child class
+t1 = toyota("black", "electric")
+
+# Access attributes from parent and child class
+print(t1.type)     # Output: electric (from parent class)
+print(t1.color)    # Output: black (from child class)
+----------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to demonstrate a class method.
+# Class method is bound to the class, not the object, and can modify class attributes.
+
+class student:
+    name = "jayesh"   # Class attribute
+
+    @classmethod
+    def set_name(cls, new_name):  # Class method receives class as first parameter (cls)
+        cls.name = new_name        # Modify class attribute
+
+# Call class method using the class
+student.set_name("bhavik")
+
+# Access class attribute via class
+print(student.name)  # Output: bhavik
+
+# Access class attribute via object
+s1 = student()
+print(s1.name)       # Output: bhavik
+-----------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to demonstrate the use of @property in a class.
+# Property allows controlled access to private data members and encapsulation.
+
+class student:
+    def __init__(self, phy, chem, math):
+        self.phy = phy       # Physics marks
+        self.chem = chem     # Chemistry marks
+        self.math = math     # Math marks
+
+    @property
+    def percantage(self):    # Property to calculate average marks
+        return str((self.phy + self.chem + self.math) / 3) + "%"
+
+# Create an object of the class
+s1 = student(99, 98, 97)
+
+# Access and modify attributes
+print(s1.phy)               # Output: 99
+s1.phy = 86                 # Modify physics marks
+print(s1.phy)               # Output: 86
+
+# Access calculated property
+print(s1.percantage)        # Output: 93.66666666666667%
+---------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to demonstrate polymorphism using a class 'complex'.
+# Polymorphism allows using the same operation in different ways (here: adding complex numbers).
+
+class complex:
+    def __init__(self, real, img):
+        self.real = real    # Real part
+        self.img = img      # Imaginary part
+
+    def shownumbers(self):  # Method to display complex number
+        print(self.real, "i +", self.img, "j +")
+
+    def add(self, c2):     # Method to add two complex numbers
+        newreal = self.real + c2.real
+        newimg = self.img + c2.img
+        return complex(newreal, newimg)
+
+# Create objects of the class
+c1 = complex(3, 5)
+c1.shownumbers()          # Output: 3 i + 5 j +
+
+c2 = complex(4, 5)
+c2.shownumbers()          # Output: 4 i + 5 j +
+
+# Add two complex numbers using 'add' method
+c3 = c1.add(c2)
+c3.shownumbers()          # Output: 7 i + 10 j +
+-------------------------------------------------------------------------------------------------------------------------------------

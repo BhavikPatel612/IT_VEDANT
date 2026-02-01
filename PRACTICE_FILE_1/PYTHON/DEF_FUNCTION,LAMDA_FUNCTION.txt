@@ -1,0 +1,295 @@
+--------------------------------------------------------------------------------------------------------------------------
+def function(define function)
+-------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to define a simple function and call it.
+
+def sum():         # Define a function named 'sum'
+    print("hi bro")  # Function body: prints a message
+
+# Call the function
+sum()
+
+# Comment:
+# This program demonstrates:
+# - Defining a function using def keyword
+# - Naming the function (here: sum)
+# - Writing a simple statement inside the function
+# - Calling the function to execute its code
+--------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to define a function with a parameter
+# and print a message using that parameter.
+
+def sum(w):     # Define a function 'sum' with parameter w
+    print(w, "hello guys")  # Print the parameter with a message
+
+# Example call
+sum("Bhavik")  # Pass an argument to the function
+
+# Comment:
+# This program demonstrates:
+# - Defining a function with a parameter
+# - Using the parameter inside the function
+# - Passing arguments when calling the function
+# - Functions with parameters are more flexible and reusable
+-----------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to call a function with different arguments.
+
+def sum(w):     # Function with one parameter
+    print(w, "hello guys")  # Print the argument with a message
+
+# Function calls with different arguments
+sum("hello bhavik")  # Pass first argument
+sum("look at me")    # Pass second argument
+
+# Comment:
+# This program demonstrates:
+# - Calling a function multiple times with different arguments
+# - How the parameter receives different values in each call
+# - Reusing the same function for different inputs        
+--------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to define a function with two parameters
+# and print their sum.
+
+def add(s, t):      # Define a function 'add' with two parameters
+    print(s + t)    # Print the sum of the parameters
+
+# Call the function with two arguments
+add(56, 78)
+
+# Comment:
+# This program demonstrates:
+# - Defining a function with multiple parameters
+# - Passing arguments to the function
+# - Performing addition inside the function
+# - Printing the result
+--------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to define a function with arbitrary arguments (*args)
+# and access specific elements inside the function.
+
+def sum(*w):      # *w allows passing arbitrary number of arguments
+    print(w[0], w[1], "are you f9?")  # Access the first two arguments
+
+# Example call
+sum("Bhavik", "Jay")  # Pass two arguments
+
+# Comment:
+# This program demonstrates:
+# - Using *args to allow a variable number of arguments
+# - Accessing elements of the tuple formed by *args using indexing
+# - Functions with arbitrary arguments are flexible for multiple inputs
+--------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to define a function with a default parameter
+# and print a message using that parameter.
+
+def cum(s=" "):    # Default parameter s is a space
+    print(s, "hi bro howz you?")  # Print the parameter with a message
+
+# Example calls
+cum()             # Call without argument, uses default value
+cum("Bhavik")     # Call with an argument
+
+# Comment:
+# This program demonstrates:
+# - Defining a function with a default parameter
+# - Using the default value if no argument is provided
+# - Overriding the default by passing an argument
+# - Default parameters make functions more flexible
+---------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to calculate the factorial of a number
+# using a for loop.
+
+num = 1
+fact = 1
+end = int(input("Enter last digit here: "))  # Take input from user
+
+for h in range(num, end + 1):
+    fact = fact * h  # Multiply each number in the range
+
+print(fact)  # Display factorial
+
+# Comment:
+# This program demonstrates:
+# - Calculating factorial using a for loop
+# - Initializing a variable to store the result
+# - Iterating from 1 to the given number
+# - Multiplying numbers sequentially to compute factorial
+# - Printing the final result
+----------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to define a function that calculates the factorial
+# of a number and prints the result.
+
+def fact(g):
+    num = 1
+    fact = 1
+    for h in range(num, g + 1):
+        fact = fact * h
+    print(fact)  # Print factorial of g
+
+# Function call
+fact(5)  # Call the function with argument 5
+
+# Comment:
+# This program demonstrates:
+# - Defining a function to calculate factorial
+# - Using a for loop inside a function
+# - Passing an argument to the function
+# - Printing the computed factorial
+# - Functions allow reusing the code with different inputs
+----------------------------------------------------------------------------------------------------------------------
+Define function with arbitary function with (list,tuple,set)(keys,values,items)
+----------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to define a function with arbitrary keyword arguments (**kwargs)
+# and print the received arguments.
+
+def crf(**r):    # **r allows passing arbitrary keyword arguments
+    print("What is your", r)  # Print all keyword arguments as a dictionary
+
+# Function call with multiple keyword arguments
+crf(name1="ramesh", name2="bhavik", name3="jayesh")
+
+# Comment:
+# This program demonstrates:
+# - Using **kwargs to accept arbitrary keyword arguments in a function
+# - Keyword arguments are stored as a dictionary inside the function
+# - Printing the dictionary shows all key-value pairs passed
+# - Functions with **kwargs are flexible for varying number of named inputs
+--------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to define a function with arbitrary keyword arguments (**kwargs)
+# and print only the keys as a tuple.
+
+def crf(**r):    # **r allows passing arbitrary keyword arguments
+    print("What is your", tuple(r.keys()))  # Convert keys to a tuple and print
+
+# Function call with multiple keyword arguments
+crf(name1="ramesh", name2="bhavik", name3="jayesh")
+
+# Comment:
+# This program demonstrates:
+# - Using **kwargs to accept arbitrary keyword arguments in a function
+# - Accessing only the keys of the keyword arguments
+# - Converting dictionary keys to a tuple for display
+# - Flexible functions with named arguments
+---------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to define a function with arbitrary keyword arguments (**kwargs)
+# and print only the values as a list.
+
+def crf(**r):    # **r allows passing arbitrary keyword arguments
+    print("What is your", list(r.values()))  # Convert values to a list and print
+
+# Function call with multiple keyword arguments
+crf(name1="ramesh", name2="bhavik", name3="jayesh")
+
+# Comment:
+# This program demonstrates:
+# - Using **kwargs to accept arbitrary keyword arguments in a function
+# - Accessing only the values of the keyword arguments
+# - Converting dictionary values to a list for display
+# - Functions with **kwargs are flexible for varying number of named inputs
+-----------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to define a function with arbitrary keyword arguments (**kwargs)
+# and print the key-value pairs as a set.
+
+def crf(**r):    # **r allows passing arbitrary keyword arguments
+    print("What is your", set(r.items()))  # Convert key-value pairs to a set and print
+
+# Function call with multiple keyword arguments
+crf(name1="ramesh", name2="bhavik", name3="jayesh")
+-----------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to define a function with arbitrary keyword arguments (**kwargs)
+# and print the first key-value pair as a tuple.
+
+def crf(**r):    # **r allows passing arbitrary keyword arguments
+    print("What is your age", tuple(r.items())[0])  # Access the first key-value pair
+
+# Function call with multiple keyword arguments
+crf(name1="ramesh", name2="bhavik", name3="jayesh")
+---------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to define a function with arbitrary keyword arguments (**kwargs)
+# and print the first value from the passed arguments as a list element.
+
+def crf(**r):    # **r allows passing arbitrary keyword arguments
+    print("What is your age", list(r.values())[0])  # Access the first value
+
+# Function call with multiple keyword arguments
+crf(name1="ramesh", name2="bhavik", name3="jayesh")
+---------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to define a function with arbitrary keyword arguments (**kwargs)
+# and print the first key from the passed arguments as a tuple element.
+
+def crf(**r):    # **r allows passing arbitrary keyword arguments
+    print("What is your age", tuple(r.keys())[0])  # Access the first key
+
+# Function call with multiple keyword arguments
+crf(name1="ramesh", name2="bhavik", name3="jayesh")
+------------------------------------------------------------------------------------------------------------------------
+LAMBDA FUNCTION
+-------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to create a lambda function that adds two numbers
+# and call it with arguments.
+
+d = lambda s, r: s + r  # Lambda function to add two numbers
+
+d(5, 6)  # Call the lambda function with arguments 5 and 6
+-------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to create and use lambda functions
+# for multiplication and square of a number.
+
+s = lambda r, z: r * z  # Lambda function to multiply two numbers
+print(s(4, 3))           # Call with 4 and 3
+
+z = lambda r: r * r      # Lambda function to calculate square
+print(z(5))               # Call with 5
+------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to sort a list of strings based on their length
+# using a lambda function as the key.
+
+names = ["Ramesh", "Bhavik", "Jayesh"]  # List of names
+
+names.sort(key=lambda x: len(x))        # Sort by length of each name
+print(names)                            # Display sorted list
+-----------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to use map() with a lambda function
+# to square all numbers in a list.
+
+numbers = [1, 2, 3, 4]                          # Original list
+
+squared = list(map(lambda x: x**2, numbers))    # Square each element using map and lambda
+print(squared)                                  # Display squared numbers
+-------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to use filter() with a lambda function
+# to get all even numbers from a list.
+
+numbers = [10, 15, 20, 25, 30]               # Original list
+
+even = list(filter(lambda x: x % 2 == 0, numbers))  # Filter even numbers using lambda
+print(even)                                   # Display even numbers
+-------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to use reduce() with a lambda function
+# to calculate the sum of all elements in a list.
+
+from functools import reduce   # Import reduce function
+
+numbers = [1, 2, 3, 4]  
+sum_all = reduce(lambda x, y: x + y, numbers)  # Sum all elements using reduce and lambda
+print(sum_all)  # Display the result

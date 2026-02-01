@@ -1,0 +1,313 @@
+MODULES
+--------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to import the math module
+# and demonstrate its usage in future calculations.
+
+import math  
+#The math module provides mathematical functions like sqrt, sin, cos, etc.
+--------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to calculate the factorial of a number
+# using the math module.
+
+math.factorial(3)
+# Comment:
+# This program demonstrates:
+# - Using math.factorial() to compute the factorial of a number
+# - Importing the math module to access built-in mathematical functions
+-------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to calculate the square root of a number
+# using the math module.
+
+import math
+
+w = math.sqrt(6)  # Calculate the square root of 6
+w                 # Display the result
+----------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to access the value of pi
+# using the math module.
+
+import math
+
+s = math.pi  # Access the value of pi
+s           # Display pi
+-----------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to define a function with two parameters
+# and print both values.
+
+def name(s, t):
+    print("what is your age", s)  # Print first parameter
+    print("what is your age", t)  # Print second parameter
+
+# Function call with two arguments
+name("bhavik", "arvind")
+------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to import a custom module
+# and call a function defined inside that module.
+
+import maninagar  # Import the custom Python file maninagar.py
+
+# Call the 'name' function from the imported module
+maninagar.name("zero", "hero")
+----------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to demonstrate importing a custom module
+# and calling its function in separate steps (cells).
+
+import maninagar    # Step 1: Import the module
+-------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to call a function from a previously imported custom module
+# with different arguments.
+
+import maninagar  # Ensure the module is imported
+
+maninagar.name("guys", "bro")  # Call the function with new arguments
+---------------------------------------------------------------------------------------------------------------
+Datetime Module
+-----------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to import the datetime module.
+
+import datetime  # Import the datetime module from Python standard library
+
+# Comment:
+# This program demonstrates:
+# - How to import a built-in Python module
+# - The datetime module provides classes for manipulating dates and times
+# - Once imported, you can use datetime.datetime, datetime.date, datetime.time, etc.
+----------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to get the current date and time
+# using the datetime module.
+
+import datetime
+
+e = datetime.datetime.now()  # Get current date and time (year, month, day, hour, minute, second, microsecond)
+print(e)                     # Display the current date and time
+---------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to get the current date and time
+# using the today() method of the datetime module.
+
+import datetime
+
+s = datetime.datetime.today()  # Get current date and time using today()
+print(s)                       # Display the current date and time
+---------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to extract the day, month, and year
+# from the current date using the datetime module.
+
+import datetime
+
+s = datetime.datetime.today()  # Get current date and time
+
+print(s.day)    # Print the day of the month
+print(s.month)  # Print the month
+print(s.year)   # Print the year
+-------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to create a specific date using datetime.date
+# and extract the year and the weekday name.
+
+import datetime
+
+s = datetime.date(2018, 10, 10)  # Create a date object (year, month, day)
+print("year :", s.year)           # Print the year
+print(s.strftime("%A"))           # Print the weekday name (%A gives full weekday)
+--------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to import only the datetime class
+# from the datetime module.
+
+from datetime import datetime  # Import datetime class directly
+-----------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to convert a date-time string into a datetime object.
+
+from datetime import datetime
+
+d = "2024-03-17 15:30"                    # Date-time as a string
+s = datetime.strptime(d, "%Y-%m-%d %H:%M")  # Convert string to datetime object
+print(s)                                   # Display the datetime object
+--------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to convert a datetime object into a formatted string.
+
+from datetime import datetime
+
+d = datetime.now()                     # Get the current datetime object
+s = d.strftime("%Y-%m-%d %I:%H %p")   # Convert datetime object to string with custom format
+print(s)                               # Display the formatted string
+---------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to import the time class from the datetime module.
+
+from datetime import time  # Import the time class directly
+---------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to create a time object
+# using the datetime.time class.
+
+from datetime import time
+
+t = time(15, 30, 15)  # Create a time object (hour=15, minute=30, second=15)
+print(t)               # Display the time object
+-----------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to import multiple classes (datetime, date, time)
+# from the datetime module in a single line.
+
+from datetime import datetime, date, time  # Import multiple classes directly
+------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to combine a date object and a time object
+# into a single datetime object.
+
+from datetime import datetime, date, time
+
+d = date(2025, 10, 10)        # Create a date object
+t = time(15, 30, 14)          # Create a time object
+
+dt = datetime.combine(d, t)   # Combine date and time into a datetime object
+print(dt)                      # Display the combined datetime
+-----------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to display the year, month, day,
+# and weekday name of a datetime object.
+
+from datetime import datetime
+
+s = datetime.today()  # Get current date and time
+
+print(s.year, "/", s.month, "/", s.day, "/", s.strftime("%A"))
+# %A: Represents the full weekday name (e.g., Monday, Tuesday)
+---------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to display the year, month, day,
+# and abbreviated weekday name of a datetime object.
+
+from datetime import datetime
+
+s = datetime.today()  # Get current date and time
+
+print(s.year, "/", s.month, "/", s.day, "/", s.strftime("%a"))
+# %a: Represents the abbreviated weekday name (e.g., Mon, Tue)
+------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to display the year, month name, and day
+# of a datetime object.
+
+from datetime import datetime
+
+s = datetime.today()  # Get current date and time
+
+print(s.year, "/", s.month, s.strftime("%B"), "/", s.day)
+# %B: Represents the full month name (e.g., January, February)
+-------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to display the year, abbreviated month name, and day
+# of a datetime object.
+
+from datetime import datetime
+
+s = datetime.today()  # Get current date and time
+
+print(s.year, "/", s.month, s.strftime("%b"), "/", s.day)
+# %b: Represents the abbreviated month name (e.g., Jan, Feb)
+---------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to display the current date in the format YY-MM-DD
+# using strftime().
+
+from datetime import datetime
+
+s = datetime.today()            # Get current date and time
+print(s.strftime("%y-%m-%d"))   # Format date as YY-MM-DD
+--------------------------------------------------------------------------------------------------------
+Random module
+-------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to import the random module.
+
+import random  # Import the random module
+-------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to generate a random float number
+# between 0.0 and 1.0 using the random module.
+
+import random
+
+s = random.random()  # Generate a random float in the range [0.0, 1.0)
+s                    # Display the random value
+------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to generate a random integer
+# between two specified values using random.randint().
+
+import random
+
+s = random.randint(1, 10)  # Generate a random integer from 1 to 10 (inclusive)
+s                           # Display the random integer
+--------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to generate a random integer
+# within a specified range using random.randrange().
+
+import random
+
+s = random.randrange(1, 10)  # Generate a random integer from 1 to 9 (10 not included)
+s                             # Display the random integer
+---------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to select multiple random elements from a list
+# using random.choices().
+
+import random
+
+h = ["reb", "blue", "dark", "yellow"]  # Original list
+h = random.choices(h, k=2)             # Select 2 random elements (with replacement)
+h                                       # Display selected elements
+----------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to select multiple random elements from a list
+# using random.choices() with custom weights.
+
+import random
+
+d = ["black", "white", "wast", "rose"]             # Original list
+d = random.choices(d, weights=[0, 1, 1, 1], k=3)   # Select 3 elements with weights
+d                                                  # Display selected elements
+------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to set a random seed
+# so that the random numbers generated are reproducible.
+
+import random
+
+random.seed(6)           # Set the seed for reproducibility
+print(random.random())   # Generate a random float (will always be the same with this seed)
+-------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to generate a random floating-point number
+# between two specified values using random.uniform().
+
+import random
+
+random.uniform(1, 10)  # Generate a random float between 1 and 10 (inclusive)
+-------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to select multiple unique elements from a list
+# using random.sample().
+
+import random
+
+names = ["Ramesh", "Bhavik", "Jayesh", "Suresh"]  # Original list
+selected = random.sample(names, 2)                # Select 2 unique elements
+print(selected)                                   # Display the selected elements

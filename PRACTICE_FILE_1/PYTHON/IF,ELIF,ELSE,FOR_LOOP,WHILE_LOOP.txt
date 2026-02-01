@@ -1,0 +1,147 @@
+# Question:
+# Write a Python program to check if marks are greater than 70 and print a message.
+
+marks = 80
+if marks > 70:
+    print ("you are excelent")
+
+# Comment:
+# This program demonstrates a simple if statement in Python.
+# - The condition 'marks > 70' is checked.
+# - If the condition is True, the indented block under 'if' executes and prints the message.
+# - If the condition were False, nothing would be printed.
+-----------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to check marks and print a message using if-else statement.
+
+marks = 80
+if marks > 70:
+    print ("you are excelent")
+else:
+     print ("poor performance")
+
+# Comment:
+# This program demonstrates an if-else statement:
+# - The condition 'marks > 70' is checked.
+# - If True, it prints "You are excellent".
+# - If False, it prints "Poor performance".
+# The 'else' block executes only when the 'if' condition is False.
+--------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to categorize a person's age using if-elif-else statements.
+
+age = int(input("enter your age here :"))
+if age > 65:
+    print ("you is older")
+elif age <=65 and age >=18:
+    print ("you is adult")
+elif age < 18 and age>=12:
+    print ("you is teenagar")
+elif age<12 and age >=3:
+    print ("you is child")
+elif age<3 and age>0:
+    print ("todler")
+else:
+    print ("age invalid")
+
+# Comment:
+# This program demonstrates multiple conditions using if-elif-else:
+# - It checks the age range and prints the appropriate category.
+# - Conditions are evaluated from top to bottom; the first True condition executes.
+# - The 'else' block handles invalid or negative ages.
+-----------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to print numbers starting from 1 and multiplying by 5 each time
+# until it exceeds 100 using a while loop.
+
+n=1
+while n<=100:
+    print(n)
+    n*=5
+
+# Comment:
+# This program demonstrates a while loop:
+# - The loop continues as long as the condition 'n <= 100' is True.
+# - In each iteration, n is printed and then multiplied by 5.
+# - The loop stops when n becomes greater than 100.
+-----------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program using a while loop that increments a number by 5 each time but
+# skips printing 42 using continue.
+r = 2  
+while r < 50:
+    r += 5
+    if r == 42:
+        continue
+    print(r) 
+
+# Comment:
+# This program demonstrates the use of 'continue' in a while loop:
+# - In each iteration, r is increased by 5.
+# - If r equals 42, 'continue' skips the rest of the loop body for that iteration, so 42 is not printed.
+# - The loop continues until r >= 50.
+------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to print numbers from 1 to 11 using a for loop.
+
+for i in range(1,12):      #for loop 1 se 12 range me print karvane ke liye
+    print(i)
+
+# Comment:
+# This program demonstrates a for loop with the range() function:
+# - range(1, 12) generates numbers from 1 up to, but not including, 12.
+# - The loop iterates over each number and prints it.
+# - For loops are commonly used when the number of iterations is known.
+------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to print numbers from 1 to 11 with a step of 3 using a for loop.
+
+for i in range(1,12,3):          #(start,end,steps)
+    print(i,end=" ")
+
+
+# Comment:
+# This program demonstrates the use of range() with three arguments:
+# - start = 1 (starting number)
+# - end = 12 (ending number, not included)
+# - step = 3 (increment by 3 each time)
+# The 'end=" "' parameter prints all numbers on the same line separated by spaces.
+----------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to iterate over a sequence and print each element separated by '*'.
+
+color=("black,white,red")
+for y2 in color:
+    print(y2,end="*")
+
+# Comment:
+# This program uses a for loop to iterate over the variable 'color'.
+# Here, 'color' looks like a tuple but it actually contains a single string.
+# So the loop iterates over each character of the string one by one.
+# The 'end="*"' prints an asterisk after each character on the same line.
+--------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to check the data type of a variable and demonstrate the upper() string method.
+
+y="hello"
+print(type(y))
+y.upper()
+
+# Comment:
+# Prints the type of variable y
+# Converts the string to uppercase (but does not change y)
+--------------------------------------------------------------------------------------------------------------------------
+# Question:
+# Write a Python program to iterate through a string and skip a specific character using continue.
+
+y="hellobhavik"
+for y2 in y:
+    if y2 == "o":
+        continue
+    print(y2,end="*")
+
+# Comment:
+# This program demonstrates:
+# - Iterating over each character of a string using a for loop.
+# - Using 'continue' to skip a particular character ('o').
+# - All characters except 'o' are printed with '*' after each character.
